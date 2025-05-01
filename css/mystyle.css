@@ -1,0 +1,364 @@
+*{
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  padding:0;
+  margin:0;
+}  
+h1 {
+  color: #060878;
+}
+
+body {
+  min-height:100vh;
+  margin:0;
+}
+#wrapper{
+  max-width:1170px;
+	min-height:100vh;
+  margin:0 auto;
+	background-size: cover;
+ 	background-position: center;
+  margin:0;
+  padding-left:16px;
+  padding-right:16px;
+}
+
+.menu-wrap { 				/* .menu-wrap contains all parts of our navigation */
+  height: 3em; 			/* 	Set height for navigation */
+  background-color: #A83A24;
+  padding: 10px 15px;
+  position: fixed; 	  	/* Lock navigation to top of screen */
+  width: 100%;				/* Provide space for hamburger icon */
+  top: 0;
+  left: 0; 
+  z-index:9999;
+}
+.menu-icon {
+  font-size: 2em; 		/* Set size of hamburger menu icon */
+  color: white; 	   		/* hamburger icon will be white */
+  margin:2em;
+}
+.title a{
+  font-size: 1.5em; 		
+  color: white; 	   
+  margin:2em;
+  text-decoration: none;
+}
+.custom-menu-class {
+  position: absolute; 	/* absolutely positon nav on page */
+  top: 0em;			/*add space so links appear below hamburger icon */
+  left: 0;
+  padding-top: 2em;
+  background-color: #A83A24;
+  z-index: 9998;   /*burger icon is placed in before other contents*/
+  height: 2em;
+  white-space: nowrap;
+}
+.custom-menu-class ul {
+  list-style-type: none;	/* get rid of bullets in unordered list */
+  width: 0em;				/* Nav should be collapsed by default */
+  overflow: hidden; 		/* hide contents when collapsed */
+  transition: width 0.5s;		
+  background-color: #A83A24;
+  font-size: 1.5em;
+  padding: 1em 0em;
+}
+.custom-menu-class ul li a {
+  text-decoration: none; 	/* get rid of underlines on links */
+  display: block; 
+  padding: 1.1em 2em;	/* set padding around each link */
+  color: #fff;
+}
+.menu-icon,
+.title {
+  position: relative;
+  z-index: 10000;
+}
+#checkbox {
+  display: none;			/* although functionality is needed, we don't need to see the checkbox */
+}
+#checkbox:checked ~ .custom-menu-class ul {
+  width: 12em;			/* when checkbox is checked, expand menu */
+  background-color: #A83A24;
+}
+
+/*landing page*/
+div.frontTop{
+  background-image: url('img/map.jpg');
+  background-attachment: scroll; 
+  background-size: cover;  
+  background-position: center center;  
+  color: white; 
+  text-align: center; 
+  padding: 100px 20px;
+  height:100vh;
+}
+.frontTop h1, .frontTop h2 {
+  font-size: 3em; 
+  margin: 0;
+  padding: 0.5em 0;
+}
+/*what r u looking for*/
+div.top{
+  margin:6em 2em;
+}
+div.top h1{
+  margin:1em;
+}
+.wp-block-button__link{
+  background-color: #fff;
+  color:black;
+  margin:1em;
+  border: 2px solid black;  
+  padding: 10px 10px;        
+  background-color: transparent; 
+  font-size: 14px;   
+}
+.wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
+  width: calc(50% - var(--wp--style--block-gap, .5em) * .75);
+  }
+/*sub page of category*/
+.desktop, div.studyrmtop, div.toilettop, div.returnAftertop, div.printtop, div.aboriginaltop, div.classrmtop, div.findItemtop{
+  text-align:center;
+  background-color: #e4dddc;
+  padding:3em;
+  margin-top:2em;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* locate center */
+  justify-content: center; /* cetered even vertical*/
+}
+/**library desk*/
+.desktop h1, p, ul#desk-list{
+  margin-bottom: 1.5em;
+}
+#desk-list{
+  list-style-type: disc; 
+  padding-left: 20px; /* disk position */
+  margin: 0 auto; /* center */
+  display: block; 
+  max-width: 70%; /* stop expand */
+}
+#desk-list li{
+  text-align:left;
+  margin:0.5em 0;
+}
+div.image-container{
+  text-align:center;
+}
+div.image-container img{
+  max-width: 100%;
+  height:auto;
+}
+
+div.studyrmtop h2, h3, p{
+  margin-bottom: 1.5em;
+}
+div.toilettop h1, p, div.image-container{
+  margin-bottom: 1.5em;
+}
+div.toilettop div.image-container img{
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+div.returnAftertop h1, p, div.image-container{
+  margin-bottom: 1.5em;
+}
+div.returnAftertop div.image-container img{
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+div.printtop h1, p{
+  margin-bottom: 1.5em;
+}
+div.aboriginaltop h1, p{
+  margin-bottom: 1.5em;
+}
+div.aboriginal-image-container img{
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+div.classrmtop h1,p{
+  margin-bottom: 1.5em;
+}
+div.findItem h1, h3, p{
+  margin-bottom: 1.5em;
+}
+/*contact page*/
+
+div.contacttop{
+  background-color: #f2f2f2;
+  margin:6em 0;
+  /* text-align:center; */
+  padding: 3em 0;
+  margin-top:2em;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* locate center */
+  justify-content: center; /* cetered even vertical*/
+}
+
+.contacttop h1, h2, p, ul#contact-list{
+  margin-bottom: 1.5em;
+}
+ul#contact-list{
+  list-style: none; 
+  padding-left: 0; /* disk position */
+  margin: 0 auto; /* center */
+  display: block; 
+  max-width: 70%; /* stop expand */
+  text-align: left;
+}
+ul#contact-list li {
+  text-align: left; 
+  padding-left: 20px;  
+  margin-bottom:1em;
+}
+ul#contact-list li a{
+  text-decoration: none;
+}
+/*feedback page*/
+div.feedbacktop{
+  position:relative;
+  z-index:1;
+  width:100%;
+  text-align: center;
+  padding-top: 100px;
+}
+/* plugin no use */
+form {
+  width:100%;
+  background-color: #e4dddc;
+  margin: 0 auto;
+  padding: 14px;
+  border-radius: 10px;
+  border:none;
+  outline:none;
+
+}
+
+legend{
+  width:100%;
+  margin-top:2em;
+}
+legend h1{
+  padding: 1.5em;
+  text-align: center;
+
+}
+div.two label,div.three label{
+  display: block;  /* change label into block and able to change width */
+  text-align: left;
+  font-weight: bold;
+  margin: 0.5em 4em; 
+  width:100%;
+}
+input#checkbox{ 
+  text-align: left;
+}
+div.two input{
+  align-items:center;
+  height:3em;
+}
+div.three textarea {
+  height:10em;
+}
+
+div.two input, div.three textarea {
+  width:80%;
+  padding: 0.15em;
+  margin:0.5em 4em;
+  border-radius: 5px;
+  border:1px solid #000;
+  outline:none;
+}
+
+div.one {
+  display:block;
+  width:80%;
+  text-align: center;
+  padding-top:20px;
+
+}
+#submit, #cancel{
+/* clear: both; */
+width: 125px;
+height: 30px;
+color:white;
+background-color:#A83A24;
+text-align:center;
+line-height:20px;
+font-weight:bold;
+border-radius: 10px;
+border:none;
+outline:none;
+margin-top:10px;
+}
+/* plugin use */
+/* .feedBacktop input,
+.feedBacktop textarea,
+.feedBacktop select {
+  position: relative;
+  z-index: 1;
+} */
+
+/* desktop/large screen styles */
+@media screen and (min-width: 850px) {
+.menu-wrap {
+  /* width: 100%; */
+  padding: 10px 0;
+}
+.title a{
+  display:none;
+}
+.menu-icon {
+  display: none; 		/* hide hamburger icon on larger screens */
+}
+.custom-menu-class {
+  position: absolute;
+  top: -1.5em;		/* move navigation links up to fit content horizontally */
+  padding-top: 0;
+}
+#checkbox:checked ~ .custom-menu-class ul {
+  width: auto;		/* when checkbox is checked, expand menu */
+
+}
+.custom-menu-class ul {
+  padding: 45px 0 0 0;
+  font-size: 1.2em;
+  width: auto;
+  background-color: transparent;
+}
+.custom-menu-class ul li {
+  display: inline-block;
+}
+
+}
+@media screen and (max-width: 850px) {
+  #desk-list {
+    margin: 1em;  
+    padding-left: 20px; /* move disc left */
+    max-width: 90%; 
+  }
+  #desk-list li {
+    font-size: 1.2em; 
+  }
+  /* .wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
+  width: calc(50% - var(--wp--style--block-gap, .5em) * .75);
+  } */
+  div.one{
+    width:80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title a{
+    display:none;
+  }
+  /* .wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
+    width: calc(50% - var(--wp--style--block-gap, .5em) * .75);
+  } */
+  div.one{
+    width:80%;
+  }
+}
