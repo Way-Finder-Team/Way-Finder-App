@@ -32,7 +32,7 @@ function new_widgets_init() {
     register_sidebar( array(
         'name'          => 'Custom Header Widget Area',
         'id'            => 'custom-header-widget',
-        'before_widget' => '<div class="widge">',
+        'before_widget' => '<div class="widget">',
         'after_widget'  => '</div>',
         'before_title'  => '<h2 class="new-title">',
         'after_title'   => '</h2>',
@@ -46,7 +46,7 @@ function button_widgets_init() {
   register_sidebar( array(
       'name'          => 'Custom Button Widget Area',
       'id'            => 'custom-button-widget',
-      'before_widget' => '<div class="widge">',
+      'before_widget' => '<div class="widget">',
       'after_widget'  => '</div>',
       'before_title'  => '<h2 class="category-button">',
       'after_title'   => '</h2>',
@@ -55,3 +55,30 @@ function button_widgets_init() {
 }
 add_action( 'widgets_init', 'button_widgets_init' );
 
+function need_help_widgets_init() {
+
+    register_sidebar( array(
+        'name'          => 'Custom Need Help Widget Area',
+        'id'            => 'custom-need-help-widget',
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="custom-need-help-widget">',
+        'after_title'   => '</h2>',
+    ) );
+
+}
+add_action( 'widgets_init', 'need_help_widgets_init' );
+
+function need_classroom_init() {
+
+    register_sidebar( array(
+        'name'          => 'Custom Classroom Widget Area',
+        'id'            => 'custom-classroom-widget',
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="custom-classroom-widget">',
+        'after_title'   => '</h2>',
+    ) );
+
+}
+add_action( 'widgets_init', 'need_classroom_init' );

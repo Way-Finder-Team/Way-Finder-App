@@ -5,6 +5,7 @@
 }  
 h1 {
   color: #060878;
+  text-align: center;
 }
 
 body {
@@ -18,8 +19,8 @@ body {
 	background-size: cover;
  	background-position: center;
   margin:0;
-  padding-left:16px;
-  padding-right:16px;
+  /*padding-left:16px;*/
+  /*padding-right:16px;*/
 }
 
 .menu-wrap { 				/* .menu-wrap contains all parts of our navigation */
@@ -116,6 +117,11 @@ div.top h1{
 .wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
   width: calc(50% - var(--wp--style--block-gap, .5em) * .75);
   }
+/* Need Help Page */
+#need-help-slider {
+  padding-top: 20px;
+}
+
 /*sub page of category*/
 .desktop, div.studyrmtop, div.toilettop, div.returnAftertop, div.printtop, div.aboriginaltop, div.classrmtop, div.findItemtop{
   text-align:center;
@@ -184,15 +190,34 @@ div.classrmtop h1,p{
 div.findItem h1, h3, p{
   margin-bottom: 1.5em;
 }
+
+
+/* classroom page */
+.classroom-image-container {
+  z-index: 1;
+}
+
+.background-vector {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  height: 800px; /*make the height static*/
+}
+
+.chw-widget-area {
+  padding-top: 20px;
+}
+
 /*contact page*/
 
 div.contacttop{
   background-color: #f2f2f2;
-  margin:6em 0;
+  /*margin: 6em 0;*/
   /* text-align:center; */
   padding: 3em 0;
-  margin-top:2em;
-  height:100%;
+  /*margin-top:2em;*/
+  height:1000px;
   display: flex;
   flex-direction: column;
   align-items: center;  /* locate center */
@@ -218,6 +243,13 @@ ul#contact-list li {
 ul#contact-list li a{
   text-decoration: none;
 }
+#contact-container {
+  background-color: white;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 /*feedback page*/
 div.feedbacktop{
   position:relative;
@@ -226,16 +258,22 @@ div.feedbacktop{
   text-align: center;
   padding-top: 100px;
 }
+.feedback-h1{
+  color: black;
+  /*margin-top: 2em;*/
+  padding-top: 2em;
+}
 /* plugin no use */
 form {
-  width:100%;
-  background-color: #e4dddc;
+  /*width:100%;*/
+  height: 920px;
+  background-color: #F2F2F2;
   margin: 0 auto;
-  padding: 14px;
+  /*padding: 14px;*/
   border-radius: 10px;
   border:none;
   outline:none;
-
+  padding-top: 5px;
 }
 
 legend{
@@ -249,10 +287,10 @@ legend h1{
 }
 div.two label,div.three label{
   display: block;  /* change label into block and able to change width */
-  text-align: left;
+  /*text-align: left;*/
   font-weight: bold;
-  margin: 0.5em 4em; 
-  width:100%;
+  margin: 0.5em 0.5em 0.5em 3.5em;
+  /*width:100%;*/
 }
 input#checkbox{ 
   text-align: left;
@@ -261,17 +299,24 @@ div.two input{
   align-items:center;
   height:3em;
 }
-div.three textarea {
-  height:10em;
-}
+
 
 div.two input, div.three textarea {
-  width:80%;
+  width: 500px;
   padding: 0.15em;
-  margin:0.5em 4em;
+  margin:1em 4em;
   border-radius: 5px;
   border:1px solid #000;
   outline:none;
+  margin-bottom: 20px;
+}
+div.three textarea {
+  height:10em;
+  margin-bottom: 40px ;
+}
+#form-container{
+  justify-items: center;
+  margin-top: 1em;
 }
 
 div.one {
@@ -281,10 +326,10 @@ div.one {
   padding-top:20px;
 
 }
-#submit, #cancel{
+#submit{
 /* clear: both; */
-width: 125px;
-height: 30px;
+width: 150px;
+height: 40px;
 color:white;
 background-color:#A83A24;
 text-align:center;
@@ -293,7 +338,25 @@ font-weight:bold;
 border-radius: 10px;
 border:none;
 outline:none;
-margin-top:10px;
+margin-top:30px;
+}
+#cancel{
+  /* clear: both; */
+  width: 150px;
+  height: 40px;
+  color:#A83A24;
+  background-color:#E6D8CF;
+  text-align:center;
+  line-height:20px;
+  font-weight:bold;
+  border-radius: 10px;
+  border:none;
+  outline:none;
+  margin-bottom: 2em;
+}
+.four{
+  text-align: center;
+  padding: 10px;
 }
 /* plugin use */
 /* .feedBacktop input,
@@ -349,6 +412,12 @@ margin-top:10px;
   } */
   div.one{
     width:80%;
+  }
+}
+@media screen and (max-width: 600px) {
+
+  div.two input, div.three textarea {
+    width: 400px;
   }
 }
 @media screen and (max-width: 400px) {

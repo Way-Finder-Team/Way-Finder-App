@@ -2,7 +2,8 @@
 
         <div class="feedBacktop">
             <form action="#" method="post" id="theForm">
-                <legend><h1>Give us some Feedback!</h1></legend>
+                <legend><h1 class="feedback-h1">Give Us Some Feedback!</h1></legend>
+                   <div id="form-container">
                     <div class="two">
                         <label for="Title">Title</label>
                         <input type="text" name="Title" id="Title" placeholder="Enter your title" required>
@@ -15,17 +16,17 @@
                         <label for="enquiry">Enquiry</label>
                         <textarea  name="enquiry" id="enquiry" placeholder="Enter your feedback here..." rows="5" cols="50" required></textarea>
                     </div> 
-                    <div class="one">
+                    <div class="four">
                         <label for="terms">
                         <input type="checkbox" name="terms" id="terms" required>I agreed with terms and conditions.</label>
                     </div>
-                    <div class="one">
+                    <div class="four">
                         <input type="submit" value="Submit" id="submit">
                     </div>
-                    <div class="one">
+                    <div class="four">
                         <input type="reset" value="Cancel" id="cancel">
                     </div>
-                
+                   </div>
             </form>	
 
         </div>

@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
         <div class="contacttop">
+            <div id="contact-container">
             <h1>Contact us</h1>
             <h2>
                 <ul id=contact-list>
@@ -15,6 +16,7 @@
                 <li><a href="https://guides.dtwd.wa.gov.au/nmtafe-library">TAFE Library Website</a></li>
                 </ul>
             </h2>
+            </div>
         </div>
     </div>
 </body>
