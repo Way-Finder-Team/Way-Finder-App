@@ -12,6 +12,9 @@
             </div>
         <?php endif; ?>
     </div>
+    <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" class="goHomeButton">
+        <button type="submit" id="submit" class="submit">Go Back to Home</button>
+    </form>
 </div>
 </div>  <!-- wrapper -->
 </body>

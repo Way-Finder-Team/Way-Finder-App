@@ -1,12 +1,21 @@
-<?php get_header(); ?>
+<?php
+/* Template Name: Feedback Form */
+get_header();
+?>
+
 
         <div class="feedBacktop">
-            <form action="#" method="post" id="theForm">
+            <?php
+            if (isset($_GET['status']) && $_GET['status'] === 'success') {
+                echo '<div class="success-message">Thank you for your feedback. We always value your feedback.</div>';
+            }
+            ?>
+            <form action="<?php echo esc_url( get_template_directory_uri() . '/send-email.php' ); ?>" method="post" id="theForm">
                 <legend><h1 class="feedback-h1">Give Us Some Feedback!</h1></legend>
                    <div id="form-container">
                     <div class="two">
-                        <label for="Title">Title</label>
-                        <input type="text" name="Title" id="Title" placeholder="Enter your title" required>
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" placeholder="Enter your title" required>
                     </div>                    
                     <div class="two">
                         <label for="email">Email Address</label>
@@ -21,13 +30,15 @@
                         <input type="checkbox" name="terms" id="terms" required>I agreed with terms and conditions.</label>
                     </div>
                     <div class="four">
-                        <input type="submit" value="Submit" id="submit">
+                        <input type="submit" value="Submit" id="submit" class="submit">
                     </div>
                     <div class="four">
                         <input type="reset" value="Cancel" id="cancel">
                     </div>
                    </div>
-            </form>	
+            </form>
+
+
 
         </div>
     </div>  <!-- wrapper -->
