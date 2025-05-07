@@ -2,7 +2,7 @@
   font-family: 'Atkinson Hyperlegible', sans-serif;
   padding:0;
   margin:0;
-}  
+}
 h1 {
   color: #060878;
   text-align: center;
@@ -194,19 +194,19 @@ div.findItem h1, h3, p{
 
 /* classroom page */
 .classroom-image-container {
-  z-index: 1;
+  position: relative;
+  width: 100%;
 }
 
 .background-vector {
   position: absolute;
-  left: 0;
   width: 100%;
-  z-index: 0;
-  height: 800px; /*make the height static*/
+  height: 100%;
+
 }
 
 .chw-widget-area {
-  padding-top: 20px;
+  padding: 40px;
 }
 
 /*contact page*/
@@ -266,7 +266,7 @@ div.feedbacktop{
 /* plugin no use */
 form {
   /*width:100%;*/
-  height: 920px;
+  height: 987px;
   background-color: #F2F2F2;
   margin: 0 auto;
   /*padding: 14px;*/
