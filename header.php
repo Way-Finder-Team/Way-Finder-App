@@ -22,7 +22,12 @@
         <header class="menu-wrap">
             <input type="checkbox" id="checkbox"> <!-- Checkbox allows for opening and closing of the hamburger menu -->
             <label for="checkbox" class="menu-icon">☰</label>
-            <label for="checkbox" class="title"><a href="<?php echo home_url(); ?>">TAFE Library</a></label>
+
+            <label for="checkbox" class="title"><a href="<?php echo home_url(); ?>">
+                <span>
+                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="Logo" class="logo"> -->
+                </span>
+                Way Finder</a></label>
 
             <div class="custom-menu-class">
                 <?php 

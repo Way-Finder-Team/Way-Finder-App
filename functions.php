@@ -82,3 +82,11 @@ function need_classroom_init() {
 
 }
 add_action( 'widgets_init', 'need_classroom_init' );
+
+
+function way_finder_heading_scripts() {
+
+	wp_enqueue_script( 'way-finder-heading-welcome', get_template_directory_uri() . '/js/welcome.js', array(), '1.0.0', false );
+
+}
+add_action( 'wp_enqueue_scripts', 'way_finder_heading_scripts' );
