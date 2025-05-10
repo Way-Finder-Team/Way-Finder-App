@@ -457,6 +457,42 @@ div.one {
   z-index: 1;
 } */
 
+
+/* map */
+
+.map-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.map-container h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: black;
+  font-size: 2rem;
+  background-color: #E6D8CF;
+  border-radius: 8px;
+}
+
+.map-container h1.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.map-container iframe {
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
 /* desktop/large screen styles */
 @media screen and (min-width: 560px) {
   a.wp-block-button__link.wp-element-button {
