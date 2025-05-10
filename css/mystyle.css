@@ -14,7 +14,7 @@ body {
 }
 #wrapper{
   max-width:1170px;
-	min-height:100vh;
+  min-height:100vh;
   margin:0 auto;
 	background-size: cover;
  	background-position: center;
@@ -116,27 +116,78 @@ div.top h1{
 }
 .wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
   width: calc(50% - var(--wp--style--block-gap, .5em) * .75);
-  }
+}
+a.wp-block-button__link.wp-element-button{
+  display: inline-block;
+  max-width: 170px;
+  height: 160px;
+  border-radius: 15px;
+  border: #f2f2f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  padding: 40px 20px 20px 20px;
+}
+
+div#button-widget-area.chw-widget-area.widget-area{
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+}
+img.wp-image-92, img.wp-image-93, img.wp-image-94, img.wp-image-95, img.wp-image-96, img.wp-image-98, img.wp-image-100, img.wp-image-144, img.wp-image-97, img.wp-image-145 {
+  position: relative;
+  top: -10px !important;
+}
+
+div#category-container{
+  text-align: center;
+  margin: 0 auto;
+}
+
+
 /* Need Help Page */
 #need-help-slider {
   padding-top: 20px;
 }
 
 /*sub page of category*/
-.desktop, div.studyrmtop, div.toilettop, div.returnAftertop, div.printtop, div.aboriginaltop, div.classrmtop, div.findItemtop{
+.desktop, div.studyrmtop, div.toilettop, div.returnAftertop, div.printtop, div.aboriginaltop, div.classrmtop, div.findItemtop, div.selfLoanTop, div.accessibilityTop
+{
   text-align:center;
-  background-color: #e4dddc;
+  /*background-color: #e4dddc;*/
+  position: relative;
+  z-index: 1;
   padding:3em;
+  padding-top: 7em;
   margin-top:2em;
   height:100%;
   display: flex;
   flex-direction: column;
-  align-items: center;  /* locate center */
-  justify-content: center; /* cetered even vertical*/
+  align-items: center;
+  justify-content: center;
 }
+
+
+.wp-block-button__link.wp-element-button{
+  margin-left: 0;
+  margin-right: 0;
+
+}
+img.background-vector{
+  width: 100%;
+}
+.desktop img.background-vector, .aboriginaltop img.background-vector, .toilettop img.background-vector, .returnAftertop img.background-vector, .printtop img.background-vector, .findItemtop img.background-vector, .selfLoanTop img.background-vector, .accessibilityTop img.background-vector{
+  z-index: -1;
+  padding-top: 5em;
+}
+.classroomTop img.background-vector{
+  margin-top: 20px;
+}
+
 /**library desk*/
 .desktop h1, p, ul#desk-list{
   margin-bottom: 1.5em;
+  margin-top: 1em;
 }
 #desk-list{
   list-style-type: disc; 
@@ -160,26 +211,27 @@ div.image-container img{
 div.studyrmtop h2, h3, p{
   margin-bottom: 1.5em;
 }
-div.toilettop h1, p, div.image-container{
-  margin-bottom: 1.5em;
+div.toilettop h1, div.returnAftertop h1, .selfLoanTop h1{
+  margin-top: 1em;
 }
+.printtop h1, .aboriginaltop h1, .findItemtop h1, .accessibilityTop h1{
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
 div.toilettop div.image-container img{
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
 }
-div.returnAftertop h1, p, div.image-container{
-  margin-bottom: 1.5em;
-}
+
 div.returnAftertop div.image-container img{
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
 }
-div.printtop h1, p{
+p{
   margin-bottom: 1.5em;
 }
-div.aboriginaltop h1, p{
-  margin-bottom: 1.5em;
-}
+
 div.aboriginal-image-container img{
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
@@ -190,7 +242,17 @@ div.classrmtop h1,p{
 div.findItem h1, h3, p{
   margin-bottom: 1.5em;
 }
-
+.categoryGoHomeButton{
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+img.category-images{
+  display: block;
+  width: 400px;
+  height: auto;
+  padding-top: 40px;
+}
 
 /* classroom page */
 .classroom-image-container {
@@ -202,12 +264,28 @@ div.findItem h1, h3, p{
   position: absolute;
   width: 100%;
   height: 100%;
-
 }
-
+div#custom-classroom-widget.chw-widget-area.widget-area{
+  margin-top: 90px;
+  padding-top: 20px;
+}
 .chw-widget-area {
   padding: 40px;
 }
+#classroomGoHomeButton{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.category-images *{
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+
 
 /*contact page*/
 
@@ -220,8 +298,8 @@ div.contacttop{
   height:1000px;
   display: flex;
   flex-direction: column;
-  align-items: center;  /* locate center */
-  justify-content: center; /* cetered even vertical*/
+  align-items: center;
+  justify-content: center;
 }
 
 .contacttop h1, h2, p, ul#contact-list{
@@ -229,10 +307,10 @@ div.contacttop{
 }
 ul#contact-list{
   list-style: none; 
-  padding-left: 0; /* disk position */
-  margin: 0 auto; /* center */
+  padding-left: 0;
+  margin: 0 auto;
   display: block; 
-  max-width: 70%; /* stop expand */
+  max-width: 70%;
   text-align: left;
 }
 ul#contact-list li {
@@ -263,11 +341,23 @@ div.feedbacktop{
   /*margin-top: 2em;*/
   padding-top: 2em;
 }
+
+/*.success-message {*/
+/*  background-color: #d4edda;*/
+/*  font-size: 20px;*/
+/*  text-align: center;*/
+/*  color: #155724;*/
+/*  padding: 10px;*/
+/*  border: 1px solid #c3e6cb;*/
+/*  border-radius: 5px;*/
+/*  margin-top: 65px;*/
+/*}*/
+
 /* plugin no use */
-form {
+#theForm{
   /*width:100%;*/
   height: 987px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin: 0 auto;
   /*padding: 14px;*/
   border-radius: 10px;
@@ -326,20 +416,21 @@ div.one {
   padding-top:20px;
 
 }
-#submit{
+.submit{
 /* clear: both; */
-width: 150px;
-height: 40px;
-color:white;
-background-color:#A83A24;
-text-align:center;
-line-height:20px;
-font-weight:bold;
-border-radius: 10px;
-border:none;
-outline:none;
-margin-top:30px;
+  width: 150px;
+  height: 40px;
+  color:white;
+  background-color:#A83A24;
+  text-align:center;
+  line-height:20px;
+  font-weight:bold;
+  border-radius: 10px;
+  border:none;
+  outline:none;
+  margin-top:30px;
 }
+
 #cancel{
   /* clear: both; */
   width: 150px;
@@ -403,6 +494,23 @@ margin-top:30px;
 
 
 /* desktop/large screen styles */
+@media screen and (min-width: 560px) {
+  a.wp-block-button__link.wp-element-button {
+    margin: 10px 30px 10px 30px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .success-message {
+    margin-top: 65px;
+  }
+
+  a.wp-block-button__link.wp-element-button {
+    margin: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
 @media screen and (min-width: 850px) {
 .menu-wrap {
   /* width: 100%; */
@@ -432,8 +540,10 @@ margin-top:30px;
 .custom-menu-class ul li {
   display: inline-block;
 }
-
 }
+
+
+
 @media screen and (max-width: 850px) {
   #desk-list {
     margin: 1em;  
