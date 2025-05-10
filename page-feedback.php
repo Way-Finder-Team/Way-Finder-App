@@ -10,7 +10,9 @@ get_header();
                 echo '<div class="success-message">Thank you for your feedback. We always value your feedback.</div>';
             }
             ?>
-            <form action="<?php echo esc_url( get_template_directory_uri() . '/send-email.php' ); ?>" method="post" id="theForm">
+<!--            <form action="--><?php //echo esc_url( get_template_directory_uri() . '/send-email.php' ); ?><!--" method="post" id="theForm">-->
+            <form action="https://formsubmit.co/01f3e4b2a9a1959fa602647b3409d2f9" method="POST" id="theForm">
+                <input type="hidden" name="_next" value="http://localhost/wordpress/thank-you">
                 <legend><h1 class="feedback-h1">Give Us Some Feedback!</h1></legend>
                    <div id="form-container">
                     <div class="two">
@@ -29,7 +31,7 @@ get_header();
                         <label for="terms">
                         <input type="checkbox" name="terms" id="terms" required>I agreed with terms and conditions.</label>
                     </div>
-                    <div class="four">
+                       <div class="four">
                         <input type="submit" value="Submit" id="submit" class="submit">
                     </div>
                     <div class="four">
