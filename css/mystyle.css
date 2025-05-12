@@ -1,3 +1,4 @@
+
 *{
   font-family: 'Atkinson Hyperlegible', sans-serif;
   padding:0;
@@ -23,64 +24,76 @@ body {
   /*padding-right:16px;*/
 }
 
-.menu-wrap { 				/* .menu-wrap contains all parts of our navigation */
-  height: 3em; 			/* 	Set height for navigation */
+.menu-wrap {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3em;
   background-color: #A83A24;
   padding: 10px 15px;
-  position: fixed; 	  	/* Lock navigation to top of screen */
-  width: 100%;				/* Provide space for hamburger icon */
-  top: 0;
-  left: 0; 
-  z-index:9999;
+  z-index: 9999;
 }
-.menu-icon {
-  font-size: 2em; 		/* Set size of hamburger menu icon */
-  color: white; 	   		/* hamburger icon will be white */
-  margin:2em;
-}
-.title a{
-  font-size: 1.5em; 		
-  color: white; 	   
-  margin:2em;
-  text-decoration: none;
-}
-.custom-menu-class {
-  position: absolute; 	/* absolutely positon nav on page */
-  top: 0em;			/*add space so links appear below hamburger icon */
-  left: 0;
-  padding-top: 2em;
-  background-color: #A83A24;
-  z-index: 9998;   /*burger icon is placed in before other contents*/
-  height: 2em;
-  white-space: nowrap;
-}
-.custom-menu-class ul {
-  list-style-type: none;	/* get rid of bullets in unordered list */
-  width: 0em;				/* Nav should be collapsed by default */
-  overflow: hidden; 		/* hide contents when collapsed */
-  transition: width 0.5s;		
-  background-color: #A83A24;
-  font-size: 1.5em;
-  padding: 1em 0em;
-}
-.custom-menu-class ul li a {
-  text-decoration: none; 	/* get rid of underlines on links */
-  display: block; 
-  padding: 1.1em 2em;	/* set padding around each link */
-  color: #fff;
-}
-.menu-icon,
-.title {
-  position: relative;
+
+/* ☰ or ← */
+.menu-icon, .back-icon {
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
   z-index: 10000;
 }
-#checkbox {
-  display: none;			/* although functionality is needed, we don't need to see the checkbox */
+
+/* place Wayfinder in middle */
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
-#checkbox:checked ~ .custom-menu-class ul {
-  width: 12em;			/* when checkbox is checked, expand menu */
-  background-color: #A83A24;
+
+.title a {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
 }
+
+/* menu after click burger-icon */
+.custom-menu-class {
+  display: none;
+  position: absolute;
+  top: 4em;
+  left: 0;
+  width: 100%;
+  padding:0 1em;
+  box-sizing: border-box; 
+  background-color: white;
+  z-index: 9998;
+}
+
+.custom-menu-class ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width:93%
+}
+
+.custom-menu-class ul li a {
+  font-size: large;
+  display: block;
+  width: calc(100% - 1px);
+  box-sizing:border-box;
+  padding: 1em;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* shadow */
+  margin:8px 0;
+  border-radius: 15px;
+  margin-bottom: 5px; /* between each menu*/
+  transition: box-shadow 0.3s ease;
+}
+
 
 /*landing page*/
 div.frontTop{
