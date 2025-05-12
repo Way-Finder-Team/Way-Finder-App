@@ -1,6 +1,9 @@
 <?php
-echo "<!-- functions.php loaded -->";
 
+function mytheme_setup() {
+    add_theme_support( 'widgets-block-editor' );
+}
+add_action( 'after_setup_theme', 'mytheme_setup' );
 
 function add_theme_style()
 {
