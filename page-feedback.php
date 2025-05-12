@@ -25,7 +25,7 @@ get_header();
                     </div>
                     <div class="three">
                         <label for="enquiry">Enquiry</label>
-                        <textarea  name="enquiry" id="enquiry" placeholder="Enter your feedback here..." rows="5" cols="50" required></textarea>
+                        <textarea  name="enquiry" id="enquiry" placeholder="Enter your feedback here" rows="5" cols="50" required></textarea>
                     </div> 
                     <div class="four">
                         <label for="terms">
