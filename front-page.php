@@ -15,7 +15,8 @@
         allow="clipboard-write 'self' https://app.mappedin.com; web-share 'self' https://app.mappedin.com"
         scrolling="no"
         width="100%"
-        height="1920"
+        top="var(--menu-height)"
+        height="calc(100vh - var(--menu-height))"
         frameborder="0"
         style="border:0"
         src="https://app.mappedin.com/map/6705e568cda55a000ba372bc?embedded=true">

@@ -1,4 +1,6 @@
-
+:root {
+  --menu-height: 3em;
+}
 *{
   font-family: 'Atkinson Hyperlegible', sans-serif;
   padding:0;
@@ -31,7 +33,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 3em;
+  height: var(--menu-height);
   background-color: #A83A24;
   padding: 10px 15px;
   z-index: 9999;
@@ -543,7 +545,9 @@ div.one {
 .map-container iframe {
   padding: 20px 0;
   width: 100%;
-  height: 100%;
+  height: calc(100vh - var(--menu-height));
+  top: var(--menu-height);
+  position: absolute;
   border: 0;
 }
 
