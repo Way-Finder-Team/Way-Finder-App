@@ -326,7 +326,6 @@ ul#contact-list{
   padding-left: 0;
   margin: 0 auto;
   display: block; 
-  max-width: 70%;
 }
 ul#contact-list li {
   padding-left: 20px;
@@ -343,6 +342,13 @@ li#contact-library-link{
 #contact-text{
   text-align: center;
 }
+div#contact-info-container{
+  width: 400px;
+  margin: 0 auto;
+}
+.contact-info{
+  font-weight: normal;
+}
 li#contact-library-link:hover{
   transform: translateY(-5px);
   text-decoration: underline #0048ff;
@@ -357,6 +363,8 @@ li#contact-library-link a:hover{
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+
 /*feedback page*/
 div.feedbacktop{
   position:relative;
