@@ -317,11 +317,8 @@ div#custom-classroom-widget.chw-widget-area.widget-area{
 
 div.contacttop{
   background-color: #f2f2f2;
-  /*margin: 6em 0;*/
-  /* text-align:center; */
-  padding: 3em 0;
-  /*margin-top:2em;*/
-  height:1000px;
+  padding: 5em 0 0 0;
+  height:969px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -337,7 +334,6 @@ ul#contact-list{
   padding-left: 0;
   margin: 0 auto;
   display: block; 
-  max-width: 70%;
 }
 ul#contact-list li {
   padding-left: 20px;
@@ -354,6 +350,13 @@ li#contact-library-link{
 #contact-text{
   text-align: center;
 }
+div#contact-info-container{
+  width: 400px;
+  margin: 0 auto;
+}
+.contact-info{
+  font-weight: normal;
+}
 li#contact-library-link:hover{
   transform: translateY(-5px);
   text-decoration: underline #0048ff;
@@ -364,10 +367,12 @@ li#contact-library-link a:hover{
 #contact-container {
   background-color: white;
   padding: 40px;
-  margin: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 4em 0 4em;
 }
+
+
 /*feedback page*/
 div.feedbacktop{
   position:relative;
@@ -378,28 +383,13 @@ div.feedbacktop{
 }
 .feedback-h1{
   color: black;
-  /*margin-top: 2em;*/
   padding-top: 3em;
 }
 
-/*.success-message {*/
-/*  background-color: #d4edda;*/
-/*  font-size: 20px;*/
-/*  text-align: center;*/
-/*  color: #155724;*/
-/*  padding: 10px;*/
-/*  border: 1px solid #c3e6cb;*/
-/*  border-radius: 5px;*/
-/*  margin-top: 65px;*/
-/*}*/
-
-/* plugin no use */
 #theForm{
-  /*width:100%;*/
-  height: 1040px;
+  height: 1050px;
   background-color: #f2f2f2;
   margin: 0 auto;
-  /*padding: 14px;*/
   border-radius: 10px;
   border:none;
   outline:none;
@@ -417,11 +407,9 @@ legend h1{
 }
 div.two label,div.three label{
   display: block;  /* change label into block and able to change width */
-  /*text-align: left;*/
   font-weight: bold;
   margin: 0.5em 0.5em 0.5em 4em;
   font-size: 18px;
-  /*width:100%;*/
 }
 input#checkbox{ 
   text-align: left;
@@ -508,14 +496,61 @@ div.one {
   padding: 10px;
   font-size: 18px;
 }
-/* plugin use */
-/* .feedBacktop input,
-.feedBacktop textarea,
-.feedBacktop select {
-  position: relative;
-  z-index: 1;
-} */
+div.thank-you-container{
+  text-align: center;
+}
+.col {
+  margin-top: 80px;
+}
 
+.col h1 {
+  font-weight: 800;
+  padding-bottom: 10px;
+  color: #23272a;
+}
+
+.col p {
+  font-size: 17px;
+  color: black;
+}
+
+.col .col-md-8 {
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 60px 50px 0 50px ;
+  height: 350px;
+}
+
+.thankstop{
+  background-color: white;
+  height:950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#thanks-text{
+  font-size: 22px;
+}
+#feedback-return-text{
+  font-size: 22px;
+  margin: 0;
+  margin: 60px;
+}
+#feedback-return-text > a{
+  text-decoration: underline #A83A24;
+  color: #A83A24;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+#feedback-return-text > a:hover{
+  font-weight: bold;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.padded-link {
+  padding-top: 30px;
+  display: inline-block;
+}
 
 /* map */
 
@@ -563,11 +598,19 @@ div.one {
     margin: 10px 30px 10px 30px;
   }
 }
-@media screen and (min-width: 780px) {
-  /*.success-message {*/
-  /*  margin-top: 65px;*/
-  /*}*/
 
+@media screen and (min-width: 700px) {
+  div#contact-info-container{
+    width: 500px;
+    padding-left: 100px;
+  }
+  #contact-container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 780px) {
   a.wp-block-button__link.wp-element-button {
     margin: 50px;
     margin-bottom: 20px;

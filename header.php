@@ -23,7 +23,7 @@
     <div id="wrapper">
         <header class="menu-wrap">
 
-            <?php if (is_front_page()) : ?>
+            <?php if (is_front_page() || is_page('thank-you')): ?>
                 <!-- hunbarger icon -->
                 <i class="fas fa-bars menu-icon" id="menu-toggle"></i>
             <?php else : ?>
