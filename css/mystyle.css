@@ -532,9 +532,15 @@ div.thank-you-container{
 #feedback-return-text > a{
   text-decoration: underline #A83A24;
   color: #A83A24;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
 }
 #feedback-return-text > a:hover{
   font-weight: bold;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.padded-link {
+  padding-top: 30px;
+  display: inline-block;
 }
 
 /* map */

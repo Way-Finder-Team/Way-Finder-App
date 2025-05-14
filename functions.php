@@ -101,7 +101,7 @@ add_action('wp_enqueue_scripts', 'way_finder_heading_scripts');
 function burger_menu_icon_scripts()
 {
   // hamburger icon change to X or arrow
-  if (is_front_page()) {
+  if (is_front_page()||is_page('thank-you')) {
     wp_enqueue_script(
       'menu-toggle-script',
       get_template_directory_uri() . '/js/menu.js',
