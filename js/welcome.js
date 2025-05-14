@@ -1,6 +1,12 @@
 window.addEventListener('load', function () {
-    setTimeout(function () {
-        const title = document.getElementById('welcome-title');
+    const title = document.getElementById('welcome-title');
+
+    if (sessionStorage.getItem('welcomeShown')) {
         title.classList.add('hidden');
-    }, 10000);
+    } else {
+        setTimeout(function () {
+            title.classList.add('hidden');
+            sessionStorage.setItem('welcomeShown', 'true');
+    }, 5000);
+}
 });
