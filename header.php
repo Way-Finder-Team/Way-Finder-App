@@ -22,8 +22,8 @@
     <div id="wrapper">
         <header class="menu-wrap">
 
-            <?php if (is_front_page()) : ?>
-                <!-- hunbarger icon -->
+            <?php if (is_front_page() || is_page('thank-you')): ?>
+                <!-- humbarger icon -->
                 <div class="menu-icon" id="menu-toggle">☰</div>
             <?php else : ?>
                 <!-- else go back with ← -->

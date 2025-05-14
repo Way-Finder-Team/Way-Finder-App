@@ -9,7 +9,7 @@
                     We value your feedback! <br><br>
                 </p>
                 <p id="feedback-return-text">Return to original site:
-                    <a href='<?php echo esc_url(home_url('/')); ?>'>Way Finder</a>
+                    <a class="padded-link" href='<?php echo esc_url(home_url('/')); ?>'>Way Finder Home Page</a>
                 </p>
             </div>
         </div>
