@@ -7,6 +7,6 @@ window.addEventListener('load', function () {
         setTimeout(function () {
             title.classList.add('hidden');
             sessionStorage.setItem('welcomeShown', 'true');
-    }, 5000);
+    }, 10000);
 }
 });
