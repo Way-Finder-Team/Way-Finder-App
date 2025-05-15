@@ -6,8 +6,8 @@
     <div class="image-container">
         <img src="<?= get_template_directory_uri(); ?>/img/toiletDisable.png" alt="Toilet door with disable sign on." class="category-images">
     </div>
-    <p>The restrooms can be found next to the lift in the main foyer behind the security desk and opposite the Jobs & Skills Centre.<br>
-     They are regularly serviced to maintain a high standard of cleanliness.<br>
+    <p>The restrooms can be found next to the lift in the main foyer behind the security desk and opposite the Jobs & Skills Centre.<br><br>
+     They are regularly serviced to maintain a high standard of cleanliness.<br><br>
      Male, female and disability facilities are provided.<br></P>
     
     <div class="image-container">
