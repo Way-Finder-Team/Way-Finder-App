@@ -11,11 +11,9 @@
                 <p id="feedback-return-text">Return to original site:
                     <a class="padded-link" href='<?php echo esc_url(home_url('/')); ?>'>Way Finder Home Page</a>
                 </p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</body>
-</html>
+            </div> <!-- .col-md-8 -->
+        </div> <!-- .col -->
+    </div> <!-- .thank-you-container -->
+</div> <!-- .thankstop -->
 
+<?php get_footer(); ?>
