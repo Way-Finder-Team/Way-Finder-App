@@ -45,7 +45,7 @@ body {
   left: 0;
   width: 100%;
   height: var(--menu-height);
-  background-color: #A83A24;
+  background-color: #a83a24;
   padding: 10px 15px;
   z-index: 9999;
 }
@@ -79,7 +79,6 @@ body {
   width: 2em;
   height: auto;
   margin-right: 10px;
-
 }
 
 /* menu after click burger-icon */
@@ -455,6 +454,7 @@ p,
 ul#contact-list {
   margin-bottom: 1.5em;
   color: black;
+  text-align: left;
 }
 ul#contact-list {
   list-style: none;
@@ -629,8 +629,8 @@ div.one {
   font-size: 18px;
 }
 
-
 /* thank you page */
+
 div.thank-you-container {
   text-align: center;
 }
