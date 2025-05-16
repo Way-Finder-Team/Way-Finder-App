@@ -33,10 +33,14 @@
 
             <!-- Wayfinder in center -->
             <div class="title">
-                <span class="logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo/logo-fff.png" alt="logo white">
-                </span>
-                <a href="<?php echo home_url(); ?>">Way Finder</a>
+                <a href="<?php echo home_url(); ?>">
+                    <span class="logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/logo-fff.png" alt="logo white">
+                    </span>   
+                </a>
+                <a href="<?php echo home_url(); ?>"> 
+                    Way Finder
+                </a>
             </div>
 
             <!-- navigation menu -->
