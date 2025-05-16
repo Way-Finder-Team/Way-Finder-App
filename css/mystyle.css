@@ -6,6 +6,12 @@
   padding: 0;
   margin: 0;
 }
+html, body {
+  margin: 0 !important;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
 h1 {
   color: black;
   text-align: center;
@@ -26,9 +32,9 @@ body {
   margin: 0 auto;
   background-size: cover;
   background-position: center;
-  margin: 0;
-  /*padding-left:16px;*/
-  /*padding-right:16px;*/
+  /* position: fixed; */
+  top: 0;
+  left: 0;
 }
 
 .menu-wrap {
@@ -60,6 +66,7 @@ body {
   transform: translateX(-50%);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .title a {
@@ -72,7 +79,7 @@ body {
   width: 2em;
   height: auto;
   margin-right: 10px;
-  display: block;
+  
 }
 
 /* menu after click burger-icon */
@@ -414,7 +421,7 @@ div#custom-classroom-widget.chw-widget-area.widget-area {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  border-radius: 20px; /* try to see if the picutre's corner can change the  */
+  border-radius: 20px !important; /* try to see if the picutre's corner can change the  */
 }
 
 /* studyroom page  */
@@ -675,7 +682,7 @@ div.thank-you-container {
 
 .map-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   overflow: hidden;
 }
@@ -698,10 +705,11 @@ div.thank-you-container {
 }
 
 .map-container iframe {
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   width: 100%;
   height: calc(100vh - var(--menu-height));
   top: var(--menu-height);
+  left: 0;
   position: absolute;
   border: 0;
 }
