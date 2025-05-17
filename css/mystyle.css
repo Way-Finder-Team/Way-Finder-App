@@ -663,20 +663,22 @@ div.thank-you-container {
 }
 #thanks-text {
   font-size: 22px;
+  text-align: center;
 }
 #feedback-return-text {
   font-size: 22px;
   margin: 0;
   margin: 60px;
+  text-align: center;
 }
 #feedback-return-text > a {
   text-decoration: underline #a83a24;
   color: #a83a24;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 #feedback-return-text > a:hover {
   font-weight: bold;
-  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 .padded-link {
   padding-top: 30px;
