@@ -242,6 +242,18 @@ div#category-container {
 #need-help-slider {
   padding-top: 20px;
 }
+div#custom-need-help-widget.chw-widget-area.widget-area{
+  padding-top: 0;
+}
+.need-help-images *{
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.need-help-p * {
+  font-size: 15px;
+}
 
 /*sub page of category*/
 .desktop,
@@ -751,8 +763,26 @@ div.thank-you-container {
     padding-left: 0;
     padding-right: 0;
   }
+  h2, p, ul#contact-list {
+    margin-bottom: 1.5em;
+  }
+  .contacttop h1 {
+    font-size: 36px;
+  }
+  ul#contact-list li {
+    padding-left: 20px;
+    font-size: 25px;
+  }
+  .col h1 {
+    font-size: 36px;
+  }
+  #thanks-text {
+    font-size: 25px;
+  }
+  .col .col-md-8, #feedback-return-text {
+    padding: 20px;
+  }
 }
-
 @media screen and (min-width: 780px) {
   a.wp-block-button__link.wp-element-button {
     margin: 50px;
@@ -853,6 +883,7 @@ div.thank-you-container {
     width: 80%;
   }
 }
+
 @media screen and (min-height: 600px) {
   .col h1 {
     font-size: 30px;
@@ -868,27 +899,13 @@ div.thank-you-container {
     margin-top: 50px;
   }
 }
-@media screen and (min-width: 700px) {
-  h2, p, ul#contact-list {
-    margin-bottom: 1.5em;
+@media screen and (min-height: 700px){
+  div#custom-need-help-widget.chw-widget-area.widget-area {
+    padding-bottom: 0;
   }
-  .contacttop h1 {
-    font-size: 36px;
+  .need-help-images * {
+    width: 100%;
   }
-  ul#contact-list li {
-    padding-left: 20px;
-    font-size: 25px;
-  }
-  .col h1 {
-    font-size: 36px;
-  }
-  #thanks-text {
-    font-size: 25px;
-  }
-  .col .col-md-8, #feedback-return-text {
-    padding: 20px;
-  }
-
 }
 @media screen and (min-height: 720px) and (max-height: 720px){
   div#button-widget-area.chw-widget-area.widget-area {
@@ -900,6 +917,16 @@ div.thank-you-container {
   }
   div#category-container {
     min-height: 890px;
+  }
+  .feedback-h1{
+    padding-bottom: 0;
+  }
+  /* Need Help Page */
+  #need-help-slider {
+    padding-top: 0;
+  }
+  .need-help-images *{
+    width: 80%;
   }
 }
 
@@ -925,6 +952,19 @@ div.thank-you-container {
   a.wp-block-button__link.wp-element-button {
     padding: 10px 20px 0 20px;
   }
+
+  /* Need Help Page */
+  div#custom-need-help-widget.chw-widget-area.widget-area{
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .need-help-p *{
+    font-size: 17px;
+  }
+  .need-help-h1 * {
+    font-size: 30px !important;
+  }
+
 }
 
 @media screen and (min-height: 900px) {
@@ -946,9 +986,34 @@ div.thank-you-container {
   div#button-widget-area.chw-widget-area.widget-area {
     padding-top: 3.5em;
   }
+  /* Need Help Page */
+  div#custom-need-help-widget.chw-widget-area.widget-area{
+    padding-top: 30px;
+  }
 }
 @media screen and (min-height: 932px) {
   div#button-widget-area.chw-widget-area.widget-area {
     padding-top: 4em;
+  }
+}
+@media screen and (min-height: 1000px) {
+  /* Need Help Page */
+  #need-help-slider{
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+  }
+  div#custom-need-help-widget.chw-widget-area.widget-area{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .need-help-p *{
+    font-size: 20px;
+  }
+  .need-help-h1 * {
+    font-size: 35px !important;
   }
 }
