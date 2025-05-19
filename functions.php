@@ -104,7 +104,7 @@ function burger_menu_icon_scripts(){
       'menu-toggle-script',
       get_template_directory_uri() . '/js/menu.js',
       array(),
-      null,    //no virsion
+      null,    //no version
       false
     );
 }
