@@ -15,7 +15,9 @@
                         <li class="contact-info"><pre>     Closed on Public Holidays</pre></li>
                     </div>
                 <li id="contact-text">For term/semester break hours, <br> please visit our library website.</li>
-                <li id="contact-library-link"><a href="https://guides.dtwd.wa.gov.au/nmtafe-library">TAFE Library Website</a></li>
+                <li id="contact-library-link"><a href="https://guides.dtwd.wa.gov.au/nmtafe-library">TAFE Library Website<i class="fa-solid fa-angles-right"></i></a></li>
+<!--                    <li id="contact-library-link"><a href="https://guides.dtwd.wa.gov.au/nmtafe-library">TAFE Library Website<i class="fa-solid fa-angle-right"></i></a></li>-->
+
                 </ul>
             </h2>
             </div>

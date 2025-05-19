@@ -38,14 +38,17 @@ body {
   padding: 10px 15px;
   z-index: 9999;
 }
-
-/* ☰ or ← */
-.menu-icon, .back-icon {
-  font-size: 2em;
-  color: white;
-  cursor: pointer;
-  z-index: 10000;
+.menu-toggle-container{
+  position:relative;
+  z-index:10000;
 }
+/* ☰*/
+.menu-icon{
+  font-size:2em;
+  color:white;
+  cursor:pointer;
+}
+
 
 /* place Wayfinder in middle */
 .title {
@@ -82,6 +85,8 @@ body {
   z-index: 9998;
 }
 
+/* ☰ or ← */
+
 .custom-menu-class ul {
   list-style: none;
   margin: 0;
@@ -104,8 +109,45 @@ body {
   margin-bottom: 5px; /* between each menu*/
   transition: box-shadow 0.3s ease;
 }
+/*←*/
 
+.back-button-container{
+  margin-top: 0;
+  display:flex;
+  align-items:center;
+  background-color: white;
+  padding-top:80px;
+  padding-left:15px;
+}
+.back-button-container.custom-bg-color{
+  background-color: #f2f2f2 ;
+}
 
+.back-icon{
+  font-size: 1.8em;
+  cursor:pointer;
+  margin-right:10px;
+  color:#333;
+}
+.back-icon-link {
+    position: relative; 
+    z-index: 10; /*bring GoBack icon front and clickable with relative*/
+}
+.back-icon-link:hover i{
+  color:#007bff;
+}
+/*Go back*/
+.go-back-text a{
+  position:relative;
+  z-index:10;  /*bring GoBack text front and clickable with relative*/
+  font-size: 1.2em;
+  text-decoration: none;
+  color:#000;
+
+}
+.go-back-text a:hover{
+  color:#007bff;
+}
 /*landing page*/
 div.frontTop{
   background-image: url('img/map.jpg');
@@ -124,7 +166,7 @@ div.frontTop{
 }
 /*what r u looking for*/
 div.top{
-  margin:6em 2em;
+  margin:0 2em;
   height: 950px;
 }
 div.top h1{
@@ -184,8 +226,8 @@ div#category-container{
   position: relative;
   z-index: 1;
   padding:3em;
-  padding-top: 7em;
-  margin-top:2em;
+  /* padding-top: 7em; */
+  /* margin-top:2em; */
   height:100%;
   display: flex;
   flex-direction: column;
@@ -317,8 +359,8 @@ div#custom-classroom-widget.chw-widget-area.widget-area{
 
 div.contacttop{
   background-color: #f2f2f2;
-  padding: 5em 0 0 0;
-  height:969px;
+  /* padding: 5em 0 0 0; */
+  height:800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -383,7 +425,7 @@ div.feedbacktop{
 }
 .feedback-h1{
   color: black;
-  padding-top: 3em;
+  /* padding-top: 3em; */
 }
 
 #theForm{
@@ -401,7 +443,7 @@ legend{
   margin-top:2em;
 }
 legend h1{
-  padding: 1.5em;
+  padding: 0 1.5em;
   text-align: center;
 
 }

@@ -24,8 +24,8 @@ get_header(); ?>
         <img src="<?= get_template_directory_uri(); ?>/img/selfLoan-1.png"
              alt="computer on a table with sign of Library Catalogue."  class="category-images">
     </div>
-    <p>The Self Loan Station allows you to easily check out your library items at your convenience. <br>
-        Simply follow the on-screen prompts to complete your transaction quickly and efficiently, <br>
+    <p>The Self Loan Station allows you to easily check out your library items at your convenience. <br><br>
+        Simply follow the on-screen prompts to complete your transaction quickly and efficiently, 
         making borrowing books and resources hassle-free!</p>
     <div class="image-container">
         <img src="<?= get_template_directory_uri(); ?>/img/selfLoan-2.png"

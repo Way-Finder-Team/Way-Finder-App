@@ -18,25 +18,24 @@
     </title>
     <?php wp_head(); ?>
 </head>
-
 <body>
     <div id="wrapper">
         <header class="menu-wrap">
-
-            <?php if (is_front_page() || is_page('thank-you')): ?>
-                <!-- hunbarger icon -->
+            <!-- hamburger icon -->
+            <div class="menu-toggle-container">
                 <i class="fas fa-bars menu-icon" id="menu-toggle"></i>
-            <?php else : ?>
-                <!-- else go back with ← -->
-                <i class="fas fa-arrow-left back-icon" onclick="history.back();"></i>
-            <?php endif; ?>
+            </div>        
 
             <!-- Wayfinder in center -->
             <div class="title">
-                <span class="logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo/logo-fff.png" alt="logo white">
-                </span>
-                <a href="<?php echo home_url(); ?>">Way Finder</a>
+                <a href="<?php echo home_url(); ?>">
+                    <span class="logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/logo-fff.png" alt="logo white">
+                    </span>   
+                </a>
+                <a href="<?php echo home_url(); ?>"> 
+                    Way Finder
+                </a>
             </div>
 
             <!-- navigation menu -->
@@ -49,3 +48,16 @@
                 ?>
             </nav>
         </header>
+
+        <!--Go back & ← -->
+        
+        <?php if (!is_front_page() && !is_page('thank-you')): ?> 
+                <div class="back-button-container<?php if (is_page('contact')|| is_page('feedback')) echo ' custom-bg-color'; ?>">
+                    <a href="javascript:history.back();" class="back-icon-link">
+                        <i class="fas fa-arrow-left back-icon"></i>
+                    </a>
+                    <span class="go-back-text">
+                        <a href="javascript:history.back();">Go Back</a>
+                    </span>
+                </div>  
+        <?php endif; ?>

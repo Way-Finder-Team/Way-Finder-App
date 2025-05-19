@@ -20,10 +20,10 @@ get_header(); ?>
 <div class="accessibilityTop">
     <img class="background-vector" src="<?php echo get_template_directory_uri(); ?>/img/category-background.png" alt="classroom 260. Desks and chairs with computers, whiteboards and projector.">
     <h1>Accessibility and Learning Support</h1>
-    <p>By addressing academic and accessibility challenges, <br>
-        ALS ensures that students have the tools, support, <br>
-        and resources they need to thrive academically and participate fully in campus life. <br>
-        This comprehensive approach empowers students to overcome obstacles, build confidence, <br>
+    <p>By addressing academic and accessibility challenges, 
+        ALS ensures that students have the tools, support, 
+        and resources they need to thrive academically and participate fully in campus life. <br><br>
+        This comprehensive approach empowers students to overcome obstacles, build confidence, 
         and succeed in their studies, regardless of their unique circumstances.</p>
     <div class="image-container">
         <img src="<?= get_template_directory_uri(); ?>/img/accessibility.png"
