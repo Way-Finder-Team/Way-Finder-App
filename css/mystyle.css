@@ -11,7 +11,7 @@ body {
   margin: 0 !important;
   padding: 0;
   height: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 h1 {
   color: black;
@@ -51,9 +51,9 @@ body {
   z-index: 9999;
 }
 
-.menu-toggle-container{
-  position:relative;
-  z-index:10000;
+.menu-toggle-container {
+  position: relative;
+  z-index: 10000;
 }
 /* ☰ or ← */
 .menu-icon {
@@ -121,42 +121,41 @@ body {
   transition: box-shadow 0.3s ease;
 }
 /*←*/
-.back-button-container{
+.back-button-container {
   margin-top: 0;
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   background-color: white;
-  padding-top:80px;
-  padding-left:15px;
+  padding-top: 80px;
+  padding-left: 15px;
 }
-.back-button-container.custom-bg-color{
-  background-color: #f2f2f2 ;
+.back-button-container.custom-bg-color {
+  background-color: #f2f2f2;
 }
 
-.back-icon{
+.back-icon {
   font-size: 1.8em;
-  cursor:pointer;
-  margin-right:10px;
-  color:#333;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #333;
 }
 .back-icon-link {
-    position: relative; 
-    z-index: 10; /*bring GoBack icon front and clickable with relative*/
+  position: relative;
+  z-index: 10; /*bring GoBack icon front and clickable with relative*/
 }
-.back-icon-link:hover i{
-  color:#007bff;
+.back-icon-link:hover i {
+  color: #007bff;
 }
 /*Go back*/
-.go-back-text a{
-  position:relative;
-  z-index:10;  /*bring GoBack text front and clickable with relative*/
+.go-back-text a {
+  position: relative;
+  z-index: 10; /*bring GoBack text front and clickable with relative*/
   font-size: 1.2em;
   text-decoration: none;
-  color:#000;
-
+  color: #000;
 }
-.go-back-text a:hover{
-  color:#007bff;
+.go-back-text a:hover {
+  color: #007bff;
 }
 
 /*landing page*/
@@ -269,7 +268,7 @@ div#category-container {
 /* self-loan page */
 .selfLoanTop p {
   font-size: 16px;
-  padding: 10px;
+  /* padding: 10px; */
   margin-bottom: 0;
 }
 
@@ -285,10 +284,10 @@ div#category-container {
 #need-help-slider {
   padding-top: 20px;
 }
-div#custom-need-help-widget.chw-widget-area.widget-area{
+div#custom-need-help-widget.chw-widget-area.widget-area {
   padding-top: 0;
 }
-.need-help-images *{
+.need-help-images * {
   width: 90%;
   height: auto;
   display: block;
@@ -315,8 +314,9 @@ div.accessibilityTop {
   z-index: 1;
   padding: 3em;
   /* padding-top: 7em; */
-  padding-top: 3em;
-  margin-top: 3.5em;
+  padding-top: 20px;
+  /* margin-top: 3.5em; */
+  margin-top: 20px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -341,7 +341,7 @@ img.background-vector {
 .accessibilityTop img.background-vector {
   z-index: -1;
   /* padding-top: 5em; */
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 .classroomTop img.background-vector {
   margin-top: 20px;
@@ -441,7 +441,7 @@ p {
 }
 .categoryGoHomeButton {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 img.category-images {
@@ -492,7 +492,7 @@ div#custom-classroom-widget.chw-widget-area.widget-area {
 .category-images * {
   display: block;
   max-width: 400px;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   margin: 10px;
   border-radius: 20px !important; /* try to see if the picutre's corner can change the  */
@@ -820,7 +820,9 @@ div.thank-you-container {
     padding-left: 0;
     padding-right: 0;
   }
-  h2, p, ul#contact-list {
+  h2,
+  p,
+  ul#contact-list {
     margin-bottom: 1.5em;
   }
   .contacttop h1 {
@@ -836,7 +838,8 @@ div.thank-you-container {
   #thanks-text {
     font-size: 25px;
   }
-  .col .col-md-8, #feedback-return-text {
+  .col .col-md-8,
+  #feedback-return-text {
     padding: 20px;
   }
 }
@@ -935,6 +938,701 @@ div.thank-you-container {
 
 /* lisa */
 
+/* lisa */
+
+/*///////////////////////////////////// max-width: 400px////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 400px) {
+  /* library desk */
+  .title a {
+    display: none;
+  }
+  div.one {
+    width: 80%;
+  }
+
+  .desktop h1 {
+    font-size: 25px;
+  }
+
+  #desk-list li {
+    font-size: 15px;
+  }
+  .desktop p {
+    font-size: 15px;
+  }
+  .desktop {
+    margin-top: 0;
+  }
+
+  .desktop .background-vector {
+    padding-top: 40px;
+  }
+  /* div#n2-ss-3 .n2-style-de9282db16e431b63ca75e18eadcf1d6-heading {
+  padding:30px !important;
+} */
+
+  /* studyroom */
+
+  .studyrmtop {
+    height: 600px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+
+  }
+
+
+  .n2-ss-slider-controls{
+    top:0 !important;
+  }
+  #custom-studyroom-widget {
+    height: 580px;
+  }
+
+  .studyrmtop .studyroom-image-container img.background-vector {
+    height: 600px;
+  }
+  .n2-ss-slider .n2-ss-slider-wrapper-inside .n2-ss-slider-controls {
+    height: 650px !important;
+  }
+
+  div#n2-ss-3 .n2-font-e94a46bf4417601e4e51ce83eff68b69-hover {
+    font-size: 25px !important;
+    margin-bottom: 10px !important;
+  }
+
+  div#n2-ss-3 .n2-font-cd9a48f404ebe3865525c4ed269fee55-paragraph {
+    font-size: 15px !important;
+  }
+
+  .n2-ss-section-main-content{
+    height: 800px !important;
+  }
+
+  div#n2-ss-3 .n2-style-f8293b450b12ef15d5c4ff97a617a3e3-heading {
+    margin-bottom: 10px;
+  }
+
+  .submit {
+    font-size: 16px;
+    margin-top: 10px !important;
+  }
+
+
+
+  /* classroom page */
+
+  .classroomTop{
+    height: 650px;
+  }
+#custom-classroom-widget{
+  margin-top: 0 !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.n2-ss-section-main-content{
+  height: 700px !important;
+}
+  .n2-ss-slide {
+    height: 700px;
+  }
+  .classroomTop img.background-vector {
+    margin-top: 0px !important;
+    height: 580px;
+  }
+
+  div#custom-classroom-widget.chw-widget-area.widget-area {
+    padding-top: 0 !important;
+  }
+
+  .n2-font-e94a46bf4417601e4e51ce83eff68b69-hover {
+    font-size: 25px !important;
+  }
+  .n2-font-b486d2806dfdff850b5df89bd07b8974-paragraph {
+    font-size: 15px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .category-images * {
+    margin: 0 !important;
+  }
+
+  div#n2-ss-5 .n2-font-de2bc301ae43593e655b222cfbb4da4c-paragraph {
+    margin-bottom: 10px !important;
+  }
+
+  .n2-ss-slider-controls {
+    top: 100px;
+  }
+  .submit{
+    margin-top: 0 !important;
+  }
+
+
+
+  /* toilet */
+  div.toilettop {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .toilettop h1 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .toilettop p {
+    font-size: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .toilettop img.background-vector {
+    padding-top: 30px;
+  }
+
+  /* return page */
+  div.returnAftertop {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .returnAftertop h1 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .returnAftertop p {
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  /* .returnAftertop img.background-vector {
+    padding-top: 60px;
+  } */
+  .returnAftertop .image-container img {
+    padding-top: 10px;
+  }
+
+  /* .categoryGoHomeButton {
+    margin-top: 0;
+  } */
+
+  /* print and scan */
+  div.printtop {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .printtop h1 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .printtop p {
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  /* aboriginal page */
+
+  div.aboriginaltop {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .aboriginaltop h1 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .aboriginaltop p {
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  /* find library items page */
+
+  div.findItemtop {
+    /* padding-top: 30px; */
+    padding-bottom: 20px;
+  }
+
+  .findItemtop h1 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .findItemtop p {
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .findItemtop h3 {
+    margin-bottom: 0;
+  }
+
+  /* self load station page */
+  div.selfLoanTop {
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .selfLoanTop h1 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .selfLoanTop p {
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  img.category-images {
+    padding-top: 10px;
+  }
+
+  .categoryGoHomeButton .submit {
+    margin-top: 0;
+  }
+
+  /* accessibility and learning support page */
+
+  .accessibilityTop {
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .accessibilityTop h1 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .accessibilityTop p {
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/*///////////////////////////////////// min-width: 400px and max-with: 575px///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 400px) and (max-width: 575px) {
+  .title a {
+    font-size: 1.2em;
+  }
+
+  .desktop h1 {
+    font-size: 30px;
+  }
+  #desk-list li {
+    font-size: 17px;
+  }
+
+  .desktop {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .desktop .background-vector {
+    padding-top: 30px !important;
+  }
+  .categoryGoHomeButton {
+    margin-top: 0;
+  }
+
+  /* studyroom */
+
+  /* .stustudyroom-title * {
+    font-size: 15px !important;
+  } */
+ .studyrmtop {
+    margin-top: 0 !important;
+    padding-bottom: 20px !important;
+  }
+  .n2-ss-slider .n2-ss-slider-wrapper-inside .n2-ss-slider-controls {
+    height: 700px !important;
+  }
+
+
+  .n2-ss-section-main-content {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    
+  }
+  div#n2-ss-3 .n2-style-f8293b450b12ef15d5c4ff97a617a3e3-heading {
+    margin-bottom: 10px !important;
+  }
+
+  div#n2-ss-3 .n2-font-e94a46bf4417601e4e51ce83eff68b69-hover {
+    font-size: 30px !important;
+    margin-bottom: 10px !important;
+  }
+
+  div#n2-ss-3 .n2-font-cd9a48f404ebe3865525c4ed269fee55-paragraph {
+    font-size: 16px !important;
+  }
+
+  .nextend-bullet-bar {
+    margin-bottom: 30px !important;
+  }
+
+  #submit {
+    margin-top: 60px !important;
+  }
+
+  /* classroom page */
+
+  .classroomTop img.background-vector {
+    height: 630px;
+  }
+
+  .category-images * {
+    width: auto;
+  }
+
+  #custom-classroom-widget {
+    margin-top: 0 !important;
+  }
+
+  /* #submit {
+    margin-top: 10px !important;
+  } */
+
+  
+  /* toielt */
+  div.toilettop {
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+  .toilettop h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .toilettop p {
+    font-size: 15px;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* .toilettop .categoryGoHomeButton{
+    margin-top: 0;
+  } */
+
+  .toilettop .image-container img {
+    padding-top: 0;
+    /* padding-bottom: 20px; */
+  }
+
+  /* return page */
+  div.returnAftertop {
+    padding-bottom: 20px;
+  }
+  .returnAftertop h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .returnAftertop p {
+    font-size: 15px;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .returnAftertop .image-container img {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* print and scan page */
+
+  div.printtop {
+    padding-bottom: 20px;
+  }
+
+  .printtop h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .printtop p {
+    font-size: 15px;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* aboriginal page */
+
+  div.aboriginaltop {
+    padding-bottom: 20px;
+  }
+
+  .aboriginaltop h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .aboriginaltop p {
+    font-size: 15px;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* find library items page */
+
+  div.findItemtop {
+    padding-bottom: 20px;
+  }
+  .findItemtop h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .findItemtop p {
+    font-size: 15px;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  div.findItemtop h3 {
+    margin-bottom: 0;
+  }
+
+  /* self load station page */
+
+  div.selfLoanTop {
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .selfLoanTop h1 {
+    font-size: 30px;
+    /* margin-bottom: 10px; */
+  }
+  .selfLoanTop p {
+    font-size: 15px;
+    padding-bottom: 0;
+    padding-right: 0;
+    /* margin-bottom: 10px; */
+  }
+
+  img.category-images {
+    padding-top: 10px !important;
+  }
+
+  /* accessibility and learning support page */
+
+  .accessibilityTop h1 {
+    font-size: 30px !important;
+    margin: 0 !important;
+  }
+
+  .accessibilityTop p {
+    font-size: 15px;
+  }
+}
+
+/*////////////////////////// (min-width: 576px) and (max-width: 767px)/////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  #desk-list li {
+    font-size: 16px;
+  }
+  .desktop {
+    margin-top: 0;
+    padding-bottom: 30px;
+  }
+
+  .desktop .background-vector {
+    padding-top: 30px !important;
+  }
+
+  .categoryGoHomeButton {
+    margin-top: 15px !important;
+  }
+
+  /* toilet page */
+
+  .toilettop {
+    padding-top: 0 !important;
+    padding-bottom: 20px !important;
+  }
+
+  /* 
+.categoryGoHomeButton{
+  margin-top: 0 !important;
+} */
+
+  #submit {
+    margin-top: 0;
+  }
+
+  /* study room page */
+  .n2-ss-slider-controls {
+    height: 600px !important;
+  }
+  #classroomGoHomeButton {
+    margin-top: 100px;
+  }
+  .nextend-bullet-bar {
+    margin-top: 60px;
+  }
+
+  /* return page */
+  div.returnAftertop {
+    padding-bottom: 20px;
+  }
+
+  .returnAftertop h1 {
+    padding-bottom: 10px;
+  }
+  .returnAftertop .image-container img {
+    padding: 0;
+  }
+
+  /* classroom page */
+
+#custom-classroom-widget{
+  margin-top: 0 !important;
+  padding-bottom: 20px;
+}
+
+/* .n2-ss-layer {
+  text-align: center;
+} */
+
+.n2-ss-layer{
+  place-items: center;
+}
+
+  /* self load station page */
+
+  .selfLoanTop h1 {
+    margin-top: 0;
+  }
+
+  img.category-images {
+    padding-top: 10px !important;
+  }
+
+  .selfLoanTop {
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+
+  /* accessibility and learning support  */
+
+  .accessibilityTop h1 {
+    margin: 0;
+  }
+  .accessibilityTop {
+    padding-bottom: 30px !important;
+  }
+}
+
+/*/////////////////////////////// min-width: 768px) and (max-width: 991px/////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .desktop h1 {
+    font-size: 30px;
+  }
+
+  .desktop p {
+    font-size: 17px;
+  }
+  #desk-list li {
+    font-size: 18px;
+  }
+  .desktop {
+    margin-top: 0;
+    padding-bottom: 15px;
+  }
+  .desktop .background-vector {
+    padding-top: 30px !important;
+  }
+
+  /* study room page */
+  .n2-font-e94a46bf4417601e4e51ce83eff68b69-hover {
+    margin-bottom: 10px;
+  }
+
+  .n2-ss-slider-controls {
+    height: 600px !important;
+  }
+  #classroomGoHomeButton {
+    margin-top: 100px;
+  }
+  .nextend-bullet-bar {
+    margin-top: 60px;
+  }
+  .n2-ss-item-content {
+    margin-bottom: 10px;
+  }
+
+
+  /* classroom page */
+
+  #custom-classroom-widget{
+  margin-top: 0 !important;
+  padding-bottom: 20px;
+}
+
+.n2-ss-layer{
+  place-items: center;
+}
+
+
+
+
+  /* toilet */
+  .toilettop {
+    padding-bottom: 20px !important;
+    padding-top: 0 !important;
+  }
+  #submit {
+    margin-top: 0;
+  }
+
+  /* return page */
+  .returnAftertop h1 {
+    padding-bottom: 10px;
+  }
+  .returnAftertop .image-container img {
+    padding: 0;
+  }
+
+  /* self load station page */
+
+  img.category-images {
+    padding-top: 10px;
+  }
+}
+
+/* yui */
+
 @media screen and (max-width: 400px) {
   /* library desk */
   .title a {
@@ -961,7 +1659,9 @@ div.thank-you-container {
   }
 }
 @media screen and (min-width: 700px) {
-  h2, p, ul#contact-list {
+  h2,
+  p,
+  ul#contact-list {
     margin-bottom: 1.5em;
   }
   .contacttop h1 {
@@ -977,7 +1677,8 @@ div.thank-you-container {
   #thanks-text {
     font-size: 25px;
   }
-  .col .col-md-8, #feedback-return-text {
+  .col .col-md-8,
+  #feedback-return-text {
     padding: 20px;
   }
 }
@@ -992,14 +1693,14 @@ div.thank-you-container {
   div#category-container {
     min-height: 890px;
   }
-  .feedback-h1{
+  .feedback-h1 {
     padding-bottom: 0;
   }
   /* Need Help Page */
   #need-help-slider {
     padding-top: 0;
   }
-  .need-help-images *{
+  .need-help-images * {
     width: 80%;
   }
 }
@@ -1028,17 +1729,16 @@ div.thank-you-container {
   }
 
   /* Need Help Page */
-  div#custom-need-help-widget.chw-widget-area.widget-area{
+  div#custom-need-help-widget.chw-widget-area.widget-area {
     padding-top: 20px;
     padding-bottom: 40px;
   }
-  .need-help-p *{
+  .need-help-p * {
     font-size: 17px;
   }
   .need-help-h1 * {
     font-size: 30px !important;
   }
-
 }
 
 @media screen and (min-height: 900px) {
@@ -1061,7 +1761,7 @@ div.thank-you-container {
     padding-top: 3.5em;
   }
   /* Need Help Page */
-  div#custom-need-help-widget.chw-widget-area.widget-area{
+  div#custom-need-help-widget.chw-widget-area.widget-area {
     padding-top: 30px;
   }
 }
@@ -1072,7 +1772,7 @@ div.thank-you-container {
 }
 @media screen and (min-height: 1000px) {
   /* Need Help Page */
-  #need-help-slider{
+  #need-help-slider {
     padding-top: 0;
     display: flex;
     justify-content: center;
@@ -1080,11 +1780,11 @@ div.thank-you-container {
     height: 90vh;
     flex-direction: column;
   }
-  div#custom-need-help-widget.chw-widget-area.widget-area{
+  div#custom-need-help-widget.chw-widget-area.widget-area {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .need-help-p *{
+  .need-help-p * {
     font-size: 20px;
   }
   .need-help-h1 * {
