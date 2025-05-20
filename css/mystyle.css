@@ -132,30 +132,30 @@ body {
   background-color: #f2f2f2 ;
 }
 
-.back-icon{
-  font-size: 1.8em;
-  cursor:pointer;
-  margin-right:10px;
-  color:#333;
-}
 .back-icon-link {
+    display:flex;
+    align-items:center;
+    text-decoration:none;
     position: relative; 
     z-index: 10; /*bring GoBack icon front and clickable with relative*/
 }
-.back-icon-link:hover i{
-  color:#007bff;
+.back-icon{
+  font-size: 1.8em;
+  margin-right:10px;
+  color:#333;
 }
+
 /*Go back*/
-.go-back-text a{
+.go-back-text{
   position:relative;
   z-index:10;  /*bring GoBack text front and clickable with relative*/
   font-size: 1.2em;
-  text-decoration: none;
   color:#000;
 
 }
-.go-back-text a:hover{
-  color:#007bff;
+.back-icon-link:hover .back-icon, 
+.back-icon-link:hover .go-back-text{
+  color:#0048ff;
 }
 
 /*landing page*/
@@ -176,7 +176,6 @@ div.frontTop {
   padding: 0.5em 0;
 }
 /*what r u looking for*/
-
 div.top {
   margin: 4em 0 0 0;
   height: 100vh;
