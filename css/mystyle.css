@@ -51,9 +51,12 @@ body {
   z-index: 9999;
 }
 
+.menu-toggle-container{
+  position:relative;
+  z-index:10000;
+}
 /* ☰ or ← */
-.menu-icon,
-.back-icon {
+.menu-icon {
   font-size: 2em;
   color: white;
   cursor: pointer;
@@ -117,6 +120,44 @@ body {
   margin-bottom: 5px; /* between each menu*/
   transition: box-shadow 0.3s ease;
 }
+/*←*/
+.back-button-container{
+  margin-top: 0;
+  display:flex;
+  align-items:center;
+  background-color: white;
+  padding-top:80px;
+  padding-left:15px;
+}
+.back-button-container.custom-bg-color{
+  background-color: #f2f2f2 ;
+}
+
+.back-icon{
+  font-size: 1.8em;
+  cursor:pointer;
+  margin-right:10px;
+  color:#333;
+}
+.back-icon-link {
+    position: relative; 
+    z-index: 10; /*bring GoBack icon front and clickable with relative*/
+}
+.back-icon-link:hover i{
+  color:#007bff;
+}
+/*Go back*/
+.go-back-text a{
+  position:relative;
+  z-index:10;  /*bring GoBack text front and clickable with relative*/
+  font-size: 1.2em;
+  text-decoration: none;
+  color:#000;
+
+}
+.go-back-text a:hover{
+  color:#007bff;
+}
 
 /*landing page*/
 div.frontTop {
@@ -136,6 +177,7 @@ div.frontTop {
   padding: 0.5em 0;
 }
 /*what r u looking for*/
+
 div.top {
   margin: 4em 0 0 0;
   height: 100vh;
@@ -242,6 +284,18 @@ div#category-container {
 /* Need Help Page */
 #need-help-slider {
   padding-top: 20px;
+}
+div#custom-need-help-widget.chw-widget-area.widget-area{
+  padding-top: 0;
+}
+.need-help-images *{
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.need-help-p * {
+  font-size: 15px;
 }
 
 /*sub page of category*/
@@ -543,6 +597,7 @@ legend {
   width: 100%;
   margin-top: 2em;
 }
+
 legend h1 {
   padding: 1.5em;
   text-align: center;
@@ -660,12 +715,10 @@ div.thank-you-container {
   padding-bottom: 10px;
   color: #23272a;
 }
-
 .col p {
   font-size: 17px;
   color: black;
 }
-
 .col .col-md-8 {
   background-color: #f2f2f2;
   padding: 40px;
@@ -675,7 +728,6 @@ div.thank-you-container {
   height: auto;
   box-sizing: border-box;
 }
-
 .thankstop {
   background-color: white;
   height: 100vh;
@@ -706,16 +758,13 @@ div.thank-you-container {
   padding-top: 30px;
   display: inline-block;
 }
-
 /* map */
-
 .map-container {
   position: relative;
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
 }
-
 .map-container h1 {
   position: absolute;
   top: 10%;
@@ -771,8 +820,26 @@ div.thank-you-container {
     padding-left: 0;
     padding-right: 0;
   }
+  h2, p, ul#contact-list {
+    margin-bottom: 1.5em;
+  }
+  .contacttop h1 {
+    font-size: 36px;
+  }
+  ul#contact-list li {
+    padding-left: 20px;
+    font-size: 25px;
+  }
+  .col h1 {
+    font-size: 36px;
+  }
+  #thanks-text {
+    font-size: 25px;
+  }
+  .col .col-md-8, #feedback-return-text {
+    padding: 20px;
+  }
 }
-
 @media screen and (min-width: 780px) {
   a.wp-block-button__link.wp-element-button {
     margin: 50px;
@@ -876,541 +943,7 @@ div.thank-you-container {
   div.one {
     width: 80%;
   }
-
-  .desktop h1 {
-    font-size: 25px;
-  }
-
-  #desk-list li {
-    font-size: 15px;
-  }
-  .desktop p {
-    font-size: 15px;
-  }
-  /* div#n2-ss-3 .n2-style-de9282db16e431b63ca75e18eadcf1d6-heading {
-  padding:30px !important;
-} */
-
-  /* studyroom */
-
-  .studyrmtop {
-    height: 600px;
-  }
-
-  #custom-studyroom-widget {
-    height: 580px;
-  }
-
-  .studyrmtop .studyroom-image-container img.background-vector {
-    height: 600px;
-  }
-  .n2-ss-slider .n2-ss-slider-wrapper-inside .n2-ss-slider-controls {
-    height: 650px !important;
-  }
-
-  div#n2-ss-3 .n2-font-e94a46bf4417601e4e51ce83eff68b69-hover {
-    font-size: 25px !important;
-    margin-bottom: 10px !important;
-  }
-
-  div#n2-ss-3 .n2-font-cd9a48f404ebe3865525c4ed269fee55-paragraph {
-    font-size: 15px !important;
-  }
-
-  .n2-ss-section-main-content
-    n2-ss-layer-with-background
-    n2-ss-layer-content
-    n2-ow
-    n-uc-QCGGjLX6Z7ec-inner {
-    height: 800px !important;
-  }
-
-  div#n2-ss-3 .n2-style-f8293b450b12ef15d5c4ff97a617a3e3-heading {
-    margin-bottom: 10px;
-  }
-
-  .submit {
-    font-size: 16px;
-  }
-
-  /* classroom page */
-
-  .n2-ss-slide {
-    height: 700px;
-  }
-  .classroomTop img.background-vector {
-    margin-top: 0px !important;
-    height: 700px;
-  }
-
-  div#custom-classroom-widget.chw-widget-area.widget-area {
-    padding-top: 0 !important;
-  }
-
-  .n2-font-e94a46bf4417601e4e51ce83eff68b69-hover {
-    font-size: 25px !important;
-  }
-  .n2-font-b486d2806dfdff850b5df89bd07b8974-paragraph {
-    font-size: 15px !important;
-    margin-bottom: 10px !important;
-  }
-
-  .category-images * {
-    margin: 0 !important;
-  }
-
-  div#n2-ss-5 .n2-font-de2bc301ae43593e655b222cfbb4da4c-paragraph {
-    margin-bottom: 10px !important;
-  }
-
-.n2-ss-slider-controls{
-  top:100px;
 }
-
-
-
-
-
-
-  /* toilet */
-  div.toilettop {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-
-  .toilettop h1 {
-    font-size: 25px;
-    margin-top: 10px;
-  }
-
-  .toilettop p {
-    font-size: 15px;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .toilettop img.background-vector {
-    padding-top: 60px;
-  }
-
-  /* return page */
-  div.returnAftertop {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-
-  .returnAftertop h1 {
-    font-size: 25px;
-    margin-top: 10px;
-  }
-
-  .returnAftertop p {
-    font-size: 15px;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-
-  .returnAftertop img.background-vector {
-    padding-top: 60px;
-  }
-  .returnAftertop .image-container img {
-    padding-top: 10px;
-  }
-
-  .categoryGoHomeButton {
-    margin-top: 20px;
-  }
-
-  /* print and scan */
-  div.printtop {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-
-  .printtop h1 {
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-
-  .printtop p {
-    font-size: 15px;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-
-  /* aboriginal page */
-
-  div.aboriginaltop {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-
-  .aboriginaltop h1 {
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .aboriginaltop p {
-    font-size: 15px;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-
-  /* find library items page */
-
-  div.findItemtop {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-
-  .findItemtop h1 {
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .findItemtop p {
-    font-size: 15px;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-
-  /* self load station page */
-  div.selfLoanTop {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-
-  .selfLoanTop h1 {
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .selfLoanTop p {
-    font-size: 15px;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-
-  img.category-images {
-    padding-top: 10px;
-  }
-
-  /* accessibility and learning support page */
-
-  div.selfLoaccessibilityTopanTop {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-
-  .accessibilityTop h1 {
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .accessibilityTop p {
-    font-size: 15px;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 400px) and (max-width: 575px) {
-  .title a {
-    font-size: 1.2em;
-  }
-
-  .desktop h1 {
-    font-size: 30px;
-  }
-  #desk-list li {
-    font-size: 18px;
-  }
-
-  .desktop {
-    margin-top: 50px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .stustudyroom-title * {
-    font-size: 15px !important;
-  }
-
-  /* studyroom */
-
-  .n2-ss-slider .n2-ss-slider-wrapper-inside .n2-ss-slider-controls {
-    height: 700px !important;
-  }
-
-  div#n2-ss-3 .n2-style-f8293b450b12ef15d5c4ff97a617a3e3-heading {
-    margin-bottom: 10px !important;
-  }
-
-  div#n2-ss-3 .n2-font-e94a46bf4417601e4e51ce83eff68b69-hover {
-    font-size: 30px !important;
-    margin-bottom: 10px !important;
-  }
-
-  div#n2-ss-3 .n2-font-cd9a48f404ebe3865525c4ed269fee55-paragraph {
-    font-size: 18px !important;
-  }
-
-  .studyrmtop {
-    margin-top: 40px !important;
-    padding-bottom: 20px !important;
-  }
-
-  .nextend-bullet-bar {
-    margin-bottom: 30px !important;
-  }
-
-  #submit {
-    margin-top: 60px !important;
-  }
-
-
-
-  /* classroom page */
-
-  .classroomTop img.background-vector{
-    height: 630px;
-  }
-
-.category-images *{
-  width: auto;
-}
-
-div#custom-classroom-widget.chw-widget-area.widget-area{
-  margin-top: 80px;
-}
-
- #submit {
-    margin-top: 30px !important;
-  }
-
-
-  /* toielt */
-  div.toilettop {
-    padding-bottom: 0;
-  }
-  .toilettop h1 {
-    font-size: 30px;
-    padding-bottom: 10px;
-  }
-  .toilettop p {
-    font-size: 15px;
-    padding-bottom: 0;
-    padding-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .toilettop .image-container img {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  /* return page */
-  div.returnAftertop {
-    padding-bottom: 20px;
-  }
-  .returnAftertop h1 {
-    font-size: 30px;
-    padding-bottom: 10px;
-  }
-  .returnAftertop p {
-    font-size: 15px;
-    padding-bottom: 0;
-    padding-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .returnAftertop .image-container img {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  /* print and scan page */
-
-  div.printtop {
-    padding-bottom: 20px;
-  }
-
-  .printtop h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  .printtop p {
-    font-size: 15px;
-    padding-bottom: 0;
-    padding-right: 0;
-    margin-bottom: 10px;
-  }
-
-  /* aboriginal page */
-
-  div.aboriginaltop {
-    padding-bottom: 20px;
-  }
-
-  .aboriginaltop h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  .aboriginaltop p {
-    font-size: 15px;
-    padding-bottom: 0;
-    padding-right: 0;
-    margin-bottom: 10px;
-  }
-
-  /* find library items page */
-
-  div.findItemtop {
-    padding-bottom: 20px;
-  }
-  .findItemtop h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  .findItemtop p {
-    font-size: 15px;
-    padding-bottom: 0;
-    padding-right: 0;
-    margin-bottom: 10px;
-  }
-
-  /* self load station page */
-
-  div.selfLoanTop {
-    padding-bottom: 20px;
-  }
-  .selfLoanTop h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  .selfLoanTop p {
-    font-size: 15px;
-    padding-bottom: 0;
-    padding-right: 0;
-    margin-bottom: 10px;
-  }
-
-  img.category-images {
-    padding-top: 10px;
-  }
-
-  /* accessibility and learning support page */
-
-  .accessibilityTop h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-
-  .accessibilityTop p {
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  #desk-list li {
-    font-size: 16px;
-  }
-  .desktop {
-    padding-bottom: 30px;
-  }
-
-  /* study room page */
-  .n2-ss-slider-controls {
-    height: 600px !important;
-  }
-  #classroomGoHomeButton {
-    margin-top: 100px;
-  }
-  .nextend-bullet-bar {
-    margin-top: 60px;
-  }
-
-  /* return page */
-  div.returnAftertop {
-    padding-bottom: 20px;
-  }
-
-  .returnAftertop h1 {
-    padding-bottom: 10px;
-  }
-  .returnAftertop .image-container img {
-    padding: 0;
-  }
-
-  /* classroom page */
-
-
-
-
-  
-
-  /* self load station page */
-
-  img.category-images {
-    padding-top: 10px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .desktop p {
-    font-size: 18px;
-  }
-  .desktop {
-    padding-bottom: 15px;
-  }
-
-  /* study room page */
-  .n2-font-e94a46bf4417601e4e51ce83eff68b69-hover {
-    margin-bottom: 10px;
-  }
-
-  .n2-ss-slider-controls {
-    height: 600px !important;
-  }
-  #classroomGoHomeButton {
-    margin-top: 100px;
-  }
-  .nextend-bullet-bar {
-    margin-top: 60px;
-  }
-  .n2-ss-item-content {
-    margin-bottom: 10px;
-  }
-
-  /* toilet */
-  div.toilettop {
-    padding-bottom: 0;
-  }
-
-  /* return page */
-  .returnAftertop h1 {
-    padding-bottom: 10px;
-  }
-  .returnAftertop .image-container img {
-    padding: 0;
-  }
-}
-
-/* self load station page */
-
-img.category-images {
-  padding-top: 10px;
-}
-
-/* yui */
-
 @media screen and (min-height: 600px) {
   .col h1 {
     font-size: 30px;
@@ -1428,9 +961,7 @@ img.category-images {
   }
 }
 @media screen and (min-width: 700px) {
-  h2,
-  p,
-  ul#contact-list {
+  h2, p, ul#contact-list {
     margin-bottom: 1.5em;
   }
   .contacttop h1 {
@@ -1446,8 +977,7 @@ img.category-images {
   #thanks-text {
     font-size: 25px;
   }
-  .col .col-md-8,
-  #feedback-return-text {
+  .col .col-md-8, #feedback-return-text {
     padding: 20px;
   }
 }
@@ -1461,6 +991,16 @@ img.category-images {
   }
   div#category-container {
     min-height: 890px;
+  }
+  .feedback-h1{
+    padding-bottom: 0;
+  }
+  /* Need Help Page */
+  #need-help-slider {
+    padding-top: 0;
+  }
+  .need-help-images *{
+    width: 80%;
   }
 }
 
@@ -1486,6 +1026,19 @@ img.category-images {
   a.wp-block-button__link.wp-element-button {
     padding: 10px 20px 0 20px;
   }
+
+  /* Need Help Page */
+  div#custom-need-help-widget.chw-widget-area.widget-area{
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .need-help-p *{
+    font-size: 17px;
+  }
+  .need-help-h1 * {
+    font-size: 30px !important;
+  }
+
 }
 
 @media screen and (min-height: 900px) {
@@ -1507,9 +1060,34 @@ img.category-images {
   div#button-widget-area.chw-widget-area.widget-area {
     padding-top: 3.5em;
   }
+  /* Need Help Page */
+  div#custom-need-help-widget.chw-widget-area.widget-area{
+    padding-top: 30px;
+  }
 }
 @media screen and (min-height: 932px) {
   div#button-widget-area.chw-widget-area.widget-area {
     padding-top: 4em;
+  }
+}
+@media screen and (min-height: 1000px) {
+  /* Need Help Page */
+  #need-help-slider{
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+  }
+  div#custom-need-help-widget.chw-widget-area.widget-area{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .need-help-p *{
+    font-size: 20px;
+  }
+  .need-help-h1 * {
+    font-size: 35px !important;
   }
 }
