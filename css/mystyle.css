@@ -933,6 +933,45 @@ div.thank-you-container {
     font-size: 16px;
   }
 
+  /* classroom page */
+
+  .n2-ss-slide {
+    height: 700px;
+  }
+  .classroomTop img.background-vector {
+    margin-top: 0px !important;
+    height: 700px;
+  }
+
+  div#custom-classroom-widget.chw-widget-area.widget-area {
+    padding-top: 0 !important;
+  }
+
+  .n2-font-e94a46bf4417601e4e51ce83eff68b69-hover {
+    font-size: 25px !important;
+  }
+  .n2-font-b486d2806dfdff850b5df89bd07b8974-paragraph {
+    font-size: 15px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .category-images * {
+    margin: 0 !important;
+  }
+
+  div#n2-ss-5 .n2-font-de2bc301ae43593e655b222cfbb4da4c-paragraph {
+    margin-bottom: 10px !important;
+  }
+
+.n2-ss-slider-controls{
+  top:100px;
+}
+
+
+
+
+
+
   /* toilet */
   div.toilettop {
     padding-top: 30px;
@@ -1105,13 +1144,13 @@ div.thank-you-container {
   }
 
   /* studyroom */
-  
+
   .n2-ss-slider .n2-ss-slider-wrapper-inside .n2-ss-slider-controls {
     height: 700px !important;
   }
 
   div#n2-ss-3 .n2-style-f8293b450b12ef15d5c4ff97a617a3e3-heading {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
   }
 
   div#n2-ss-3 .n2-font-e94a46bf4417601e4e51ce83eff68b69-hover {
@@ -1128,13 +1167,34 @@ div.thank-you-container {
     padding-bottom: 20px !important;
   }
 
-   .nextend-bullet-bar{
-    margin-bottom: 30px;
-   }
+  .nextend-bullet-bar {
+    margin-bottom: 30px !important;
+  }
 
-   #submit{
-    margin-top: 60px;
-   }
+  #submit {
+    margin-top: 60px !important;
+  }
+
+
+
+  /* classroom page */
+
+  .classroomTop img.background-vector{
+    height: 630px;
+  }
+
+.category-images *{
+  width: auto;
+}
+
+div#custom-classroom-widget.chw-widget-area.widget-area{
+  margin-top: 80px;
+}
+
+ #submit {
+    margin-top: 30px !important;
+  }
+
 
   /* toielt */
   div.toilettop {
@@ -1266,21 +1326,16 @@ div.thank-you-container {
     padding-bottom: 30px;
   }
 
-
-/* study room page */
-.n2-ss-slider-controls{
-  height: 600px !important;
-
-}
-#classroomGoHomeButton{
-  margin-top: 100px;
-}
-.nextend-bullet-bar{
-  margin-top: 60px;
-
-}
-
-
+  /* study room page */
+  .n2-ss-slider-controls {
+    height: 600px !important;
+  }
+  #classroomGoHomeButton {
+    margin-top: 100px;
+  }
+  .nextend-bullet-bar {
+    margin-top: 60px;
+  }
 
   /* return page */
   div.returnAftertop {
@@ -1293,6 +1348,13 @@ div.thank-you-container {
   .returnAftertop .image-container img {
     padding: 0;
   }
+
+  /* classroom page */
+
+
+
+
+  
 
   /* self load station page */
 
@@ -1309,27 +1371,23 @@ div.thank-you-container {
     padding-bottom: 15px;
   }
 
-
   /* study room page */
-  .n2-font-e94a46bf4417601e4e51ce83eff68b69-hover{
+  .n2-font-e94a46bf4417601e4e51ce83eff68b69-hover {
     margin-bottom: 10px;
   }
 
-.n2-ss-slider-controls{
-  height: 600px !important;
-
-}
-#classroomGoHomeButton{
-  margin-top: 100px;
-}
-.nextend-bullet-bar{
-  margin-top: 60px;
-
-}
-.n2-ss-item-content{
-  margin-bottom: 10px;
-}
-
+  .n2-ss-slider-controls {
+    height: 600px !important;
+  }
+  #classroomGoHomeButton {
+    margin-top: 100px;
+  }
+  .nextend-bullet-bar {
+    margin-top: 60px;
+  }
+  .n2-ss-item-content {
+    margin-bottom: 10px;
+  }
 
   /* toilet */
   div.toilettop {
@@ -1350,10 +1408,6 @@ div.thank-you-container {
 img.category-images {
   padding-top: 10px;
 }
-
-
-
-
 
 /* yui */
 
