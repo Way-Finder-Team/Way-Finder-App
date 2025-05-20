@@ -55,9 +55,7 @@
                 <div class="back-button-container<?php if (is_page('contact')|| is_page('feedback')) echo ' custom-bg-color'; ?>">
                     <a href="javascript:history.back();" class="back-icon-link">
                         <i class="fas fa-arrow-left back-icon"></i>
+                        <span class="go-back-text">Go Back</span>
                     </a>
-                    <span class="go-back-text">
-                        <a href="javascript:history.back();">Go Back</a>
-                    </span>
                 </div>  
         <?php endif; ?>
