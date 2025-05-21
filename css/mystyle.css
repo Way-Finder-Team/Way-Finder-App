@@ -532,10 +532,6 @@ li#contact-library-link {
 #contact-text {
   text-align: center;
 }
-div#contact-info-container {
-  /*width: 400px;*/
-  margin: 0 auto;
-}
 .contact-info {
   font-weight: normal;
 }
@@ -599,7 +595,7 @@ div.two input {
   margin-top: 0;
 }
 #enquiry {
-  padding: 10px 15px 10px 15px;
+  padding: 10px 10px 10px 15px;
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 0;
@@ -817,13 +813,13 @@ div.thank-you-container {
 /* desktop/large screen styles */
 
 @media screen and (min-width: 700px) {
-  div#contact-info-container {
-    width: 500px;
-    padding-left: 100px;
-  }
   #contact-container {
     padding-left: 0;
     padding-right: 0;
+    width: 500px;
+  }
+  .contact-info{
+    margin-left: 40px;
   }
   h2, p, ul#contact-list {
     margin-bottom: 1.5em;
@@ -853,6 +849,12 @@ div.thank-you-container {
   }
   a.wp-block-button__link.wp-element-button {
     margin-bottom: 0;
+  }
+  #contact-container {
+    width: 600px;
+  }
+  .contact-info{
+    margin-left: 100px;
   }
 }
 
