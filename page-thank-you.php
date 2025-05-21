@@ -16,4 +16,6 @@
     </div>
 </div>
 
-<?php get_footer(); ?>
+</div>  <!-- wrapper -->
+</body>
+</html>
