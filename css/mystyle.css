@@ -753,6 +753,7 @@ div.thank-you-container {
   display: inline-block;
 }
 /* map */
+
 .map-container {
   position: relative;
   min-height: 100vh;
@@ -783,7 +784,8 @@ div.thank-you-container {
   top: var(--menu-height);
   left: 0;
   position: absolute;
-  border: 0;
+  border: none;   
+  overflow: hidden;
 }
 
   @media screen and (min-width: 320px) and (max-width: 374px){
@@ -889,9 +891,6 @@ div.thank-you-container {
     /* width: 100%; */
     padding: 10px 0;
   }
-  .title a {
-    display: none;
-  }
   .menu-icon {
     display: none; /* hide hamburger icon on larger screens */
   }
@@ -971,12 +970,6 @@ div.thank-you-container {
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media screen and (max-width: 400px) {
   /* library desk */
-  .title a {
-    display: none;
-  }
-  div.one {
-    width: 80%;
-  }
 
   .desktop h1 {
     font-size: 25px;
@@ -1264,10 +1257,6 @@ div.thank-you-container {
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (min-width: 400px) and (max-width: 575px) {
-  .title a {
-    font-size: 1.2em;
-  }
-
   .desktop h1 {
     font-size: 30px;
   }
@@ -1662,7 +1651,7 @@ div.thank-you-container {
 
 @media screen and (max-width: 400px) {
   /* library desk */
-  .title a {
+  .logo  {
     display: none;
   }
   div.one {
