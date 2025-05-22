@@ -7,19 +7,15 @@ document.addEventListener('DOMContentLoaded',
 
         let isOpen = false;
 
-        toggle.classList.remove('fa-xmark');
         toggle.classList.add('fa-bars');
+        toggle.classList.remove('fa-xmark');
+        
     
         toggle.addEventListener('click', function () {
             isOpen = !isOpen;
             menu.style.display = isOpen ? 'block' : 'none';
     
-            if (isOpen) {
-                toggle.classList.remove('fa-bars');
-                toggle.classList.add('fa-xmark');
-            } else {
-                toggle.classList.remove('fa-xmark');
-                toggle.classList.add('fa-bars');
-            }
+                toggle.classList.toggle('fa-bars', !isOpen);
+                toggle.classList.toggle('fa-xmark', isOpen);
         });
     });

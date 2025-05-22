@@ -15,7 +15,7 @@ html, body {
 h1 {
   color: black;
   text-align: center;
-  font-size: 36px;
+  /*font-size: 36px;*/
 }
 
 p {
@@ -50,9 +50,12 @@ body {
   z-index: 9999;
 }
 
+.menu-toggle-container{
+  position:relative;
+  z-index:10000;
+}
 /* ☰ or ← */
-.menu-icon,
-.back-icon {
+.menu-icon {
   font-size: 2em;
   color: white;
   cursor: pointer;
@@ -79,7 +82,6 @@ body {
   width: 2em;
   height: auto;
   margin-right: 10px;
-  
 }
 
 /* menu after click burger-icon */
@@ -92,7 +94,7 @@ body {
   padding: 0 1em;
   box-sizing: border-box;
   background-color: white;
-  z-index: 9998;
+  /*z-index: 9998;*/
 }
 
 .custom-menu-class ul {
@@ -117,6 +119,44 @@ body {
   margin-bottom: 5px; /* between each menu*/
   transition: box-shadow 0.3s ease;
 }
+/*←*/
+.back-button-container{
+  margin-top: 0;
+  display:flex;
+  align-items:center;
+  background-color: white;
+  padding-top:80px;
+  padding-left:15px;
+}
+.back-button-container.custom-bg-color{
+  background-color: #f2f2f2 ;
+}
+
+.back-icon-link {
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    position: relative; 
+    z-index: 10; /*bring GoBack icon front and clickable with relative*/
+}
+.back-icon{
+  font-size: 1.8em;
+  margin-right:10px;
+  color:#333;
+}
+
+/*Go back*/
+.go-back-text{
+  position:relative;
+  z-index:10;  /*bring GoBack text front and clickable with relative*/
+  font-size: 1.2em;
+  color:#000;
+
+}
+.back-icon-link:hover .back-icon, 
+.back-icon-link:hover .go-back-text{
+  color:#0048ff;
+}
 
 /*landing page*/
 div.frontTop {
@@ -137,11 +177,9 @@ div.frontTop {
 }
 /*what r u looking for*/
 div.top {
-  margin: 6em 2em;
-  height: 950px;
-}
-div.top h1 {
-  margin: 1em;
+  min-height: 100vh;
+  overflow-y: auto;
+  margin-top: 1em;
 }
 .wp-block-button__link {
   background-color: #fff;
@@ -151,6 +189,7 @@ div.top h1 {
   padding: 10px 10px;
   background-color: transparent;
   font-size: 14px;
+  height: auto;
 }
 .wp-block-buttons > .wp-block-button.wp-block-button__width-25 {
   width: calc(50% - var(--wp--style--block-gap, 0.5em) * 0.75);
@@ -158,12 +197,14 @@ div.top h1 {
 a.wp-block-button__link.wp-element-button {
   display: inline-block;
   max-width: 170px;
-  height: 160px;
+  min-height: 130px;
   border-radius: 15px;
   border: #f2f2f2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  padding: 40px 20px 20px 20px;
+  /*margin: 0;*/
+  margin:5px;
+  padding: 10px 10px 0 10px;
+  box-sizing: border-box;
 }
 
 div#button-widget-area.chw-widget-area.widget-area {
@@ -171,8 +212,10 @@ div#button-widget-area.chw-widget-area.widget-area {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 0;
-  margin-top: 30px;
+  padding-bottom: 10px;
+  min-width: 330px;
 }
+
 img.wp-image-92,
 img.wp-image-93,
 img.wp-image-94,
@@ -187,9 +230,11 @@ img.wp-image-145 {
   top: -10px !important;
 }
 
+
 div#category-container {
+  max-height: 80vh;
+  overflow-y: auto;
   text-align: center;
-  margin: 0 auto;
 }
 
 /* return after hour */
@@ -239,8 +284,21 @@ div#category-container {
 }
 
 /* Need Help Page */
-#need-help-slider {
-  padding-top: 20px;
+div#custom-need-help-widget.chw-widget-area.widget-area{
+  padding-top: 0;
+}
+.need-help-images *{
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.need-help-p * {
+  font-size: 12px;
+}
+
+.need-help-h1 * {
+  margin-top: 5px;
 }
 
 /*sub page of category*/
@@ -439,21 +497,19 @@ div#custom-classroom-widget.chw-widget-area.widget-area {
 
 div.contacttop {
   background-color: #f2f2f2;
-  padding: 5em 0 0 0;
-  height: 969px;
+  min-height: 90vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.contacttop h1,
-h2,
-p,
-ul#contact-list {
-  margin-bottom: 1.5em;
+h2, p, ul#contact-list {
   color: black;
   text-align: left;
+}
+.contacttop h1{
+  margin-bottom: .5em;
+  font-size: 25px;
 }
 ul#contact-list {
   list-style: none;
@@ -462,40 +518,33 @@ ul#contact-list {
   display: block;
 }
 ul#contact-list li {
-  padding-left: 20px;
   margin-bottom: 1em;
+  font-size: 18px;
 }
 ul#contact-list li a {
   text-decoration: none;
-  color: black;
+  color: #0048ff;
 }
 li#contact-library-link {
   text-align: center;
-  text-decoration: underline black;
+  text-decoration: underline #0048ff;
 }
 #contact-text {
   text-align: center;
 }
-div#contact-info-container {
-  width: 400px;
-  margin: 0 auto;
-}
 .contact-info {
   font-weight: normal;
 }
-li#contact-library-link:hover {
+li#contact-library-link:hover{
   transform: translateY(-5px);
-  text-decoration: underline #0048ff;
 }
-li#contact-library-link a:hover {
-  color: #0048ff;
-}
+
 #contact-container {
   background-color: white;
   padding: 40px;
+  margin-bottom: 40px;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin: 0 4em 0 4em;
 }
 
 /*feedback page*/
@@ -508,11 +557,15 @@ div.feedbacktop {
 }
 .feedback-h1 {
   color: black;
-  padding-top: 3em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  text-align: center;
 }
 
 #theForm {
-  height: 1050px;
+  height: 85vh;
+  overflow-y: auto;
   background-color: #f2f2f2;
   margin: 0 auto;
   border-radius: 10px;
@@ -520,20 +573,11 @@ div.feedbacktop {
   outline: none;
   padding-top: 5px;
 }
-
-legend {
-  width: 100%;
-  margin-top: 2em;
-}
-legend h1 {
-  padding: 1.5em;
-  text-align: center;
-}
 div.two label,
 div.three label {
   display: block; /* change label into block and able to change width */
   font-weight: bold;
-  margin: 0.5em 0.5em 0.5em 4em;
+  margin: 0.5em 0.5em 0 0;
   font-size: 18px;
 }
 input#checkbox {
@@ -541,16 +585,21 @@ input#checkbox {
 }
 div.two input {
   align-items: center;
-  height: 3em;
+  height: 2em;
 }
 #title,
 #email {
-  padding-left: 15px;
+  padding: 0 0 0 15px;
   font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 #enquiry {
-  padding: 15px 0 0 15px;
+  padding: 10px 10px 10px 15px;
   font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 120px;
 }
 input#terms {
   margin-right: 15px;
@@ -560,11 +609,10 @@ div.two input,
 div.three textarea {
   width: 500px;
   padding: 0.15em;
-  margin: 1em 4em;
   border-radius: 5px;
   border: 1px solid #000;
   outline: none;
-  margin-bottom: 20px;
+  min-width: 100px;
 }
 div.three textarea {
   height: 10em;
@@ -593,7 +641,7 @@ div.one {
   border-radius: 10px;
   border: none;
   outline: none;
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 18px;
   padding: 5px;
 }
@@ -620,9 +668,12 @@ div.one {
 }
 .four {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   font-size: 18px;
 }
+
+/* thank you page */
+
 div.thank-you-container {
   text-align: center;
 }
@@ -635,59 +686,56 @@ div.thank-you-container {
   padding-bottom: 10px;
   color: #23272a;
 }
-
 .col p {
   font-size: 17px;
   color: black;
 }
-
 .col .col-md-8 {
   background-color: #f2f2f2;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin: 60px 50px 0 50px;
-  height: 350px;
+  height: auto;
+  box-sizing: border-box;
 }
-
 .thankstop {
   background-color: white;
-  height: 950px;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 #thanks-text {
   font-size: 22px;
+  text-align: center;
 }
 #feedback-return-text {
   font-size: 22px;
   margin: 0;
   margin: 60px;
+  text-align: center;
 }
 #feedback-return-text > a {
   text-decoration: underline #a83a24;
   color: #a83a24;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 #feedback-return-text > a:hover {
   font-weight: bold;
-  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 .padded-link {
   padding-top: 30px;
   display: inline-block;
 }
-
 /* map */
-
 .map-container {
   position: relative;
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
 }
-
 .map-container h1 {
   position: absolute;
   top: 10%;
@@ -715,34 +763,98 @@ div.thank-you-container {
   border: 0;
 }
 
-/* outer iframe style modification
-#search-button {
-  background-color: #ff0000;
-} */
-
-/* desktop/large screen styles */
-@media screen and (min-width: 560px) {
+  @media screen and (min-width: 320px) and (max-width: 374px){
+    /*category*/
   a.wp-block-button__link.wp-element-button {
-    margin: 10px 30px 10px 30px;
+    min-height: 120px;
+    max-width: 150px;
+  }
+  div#button-widget-area.chw-widget-area.widget-area {
+    min-width: 300px;
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+    div#custom-need-help-widget.chw-widget-area.widget-area {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  /*feedback */
+  div.two label,
+  div.three {
+    padding-left: 5px
+  }
+  #title,
+  #email {
+   max-width: 270px;
+  }
+  #enquiry {
+    max-width: 270px;
   }
 }
 
-@media screen and (min-width: 700px) {
-  div#contact-info-container {
-    width: 500px;
-    padding-left: 100px;
+
+@media screen and (min-width: 430px) {
+  .feedback-h1{
+    font-size: 30px;
   }
+  .contacttop h1{
+    font-size: 27px;
+  }
+  ul#contact-list li {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 600px) {
+    .feedback-h1 {
+      font-size: 36px;
+    }
+  }
+}
+
+/* desktop/large screen styles */
+
+@media screen and (min-width: 700px) {
   #contact-container {
     padding-left: 0;
     padding-right: 0;
+    width: 500px;
+  }
+  .contact-info{
+    margin-left: 40px;
+  }
+  h2, p, ul#contact-list {
+    margin-bottom: 1.5em;
+  }
+  .contacttop h1 {
+    font-size: 36px;
+  }
+  ul#contact-list li {
+    padding-left: 20px;
+    font-size: 25px;
+  }
+  .col h1 {
+    font-size: 36px;
+  }
+  #thanks-text {
+    font-size: 25px;
+  }
+  .col .col-md-8, #feedback-return-text {
+    padding: 20px;
   }
 }
-
 @media screen and (min-width: 780px) {
   a.wp-block-button__link.wp-element-button {
     margin: 50px;
     margin-bottom: 20px;
     margin-top: 20px;
+  }
+  a.wp-block-button__link.wp-element-button {
+    margin-bottom: 0;
+  }
+  #contact-container {
+    width: 600px;
+  }
+  .contact-info{
+    margin-left: 100px;
   }
 }
 
@@ -782,9 +894,7 @@ div.thank-you-container {
   #desk-list li {
     font-size: 1.2em;
   }
-  /* .wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
-  width: calc(50% - var(--wp--style--block-gap, .5em) * .75);
-  } */
+
   div.one {
     width: 80%;
   }
@@ -795,15 +905,334 @@ div.thank-you-container {
     width: 400px;
   }
 }
+@media screen and (max-width: 430px) {
+  div#button-widget-area.chw-widget-area.widget-area {
+    overflow-y: auto;
+    max-height: 100vh;
+    margin-top: 0;
+  }
+  a.wp-block-button__link.wp-element-button {
+    max-width: 150px;
+    /*margin-right: 5px;*/
+  }
+  div.two input,
+  div.three textarea {
+    max-width: 300px;
+  }
+  #theForm {
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+  legend h1 {
+    font-size: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+  }
+  #contact-container {
+    padding: 25px;
+  }
+}
 @media screen and (max-width: 400px) {
   .logo {
     display: none;
   }
-
-  /* .wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
-    width: calc(50% - var(--wp--style--block-gap, .5em) * .75);
-  } */
   div.one {
     width: 80%;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  .col h1 {
+    font-size: 30px;
+  }
+  #thanks-text {
+    font-size: 20px;
+  }
+  .col .col-md-8, #feedback-return-text {
+    margin: 0 10px 0 10px;
+    padding: 10px;
+  }
+  .col {
+    margin-top: 50px;
+  }
+  .need-help-images *{
+    width: 80%;
+  }
+}
+@media screen and (min-height: 658px) and (max-height: 666px){
+
+.need-help-images *{
+  width: 85%;
+}
+div#custom-need-help-widget.chw-widget-area.widget-area {
+  padding-left: 0;
+  padding-right: 0;
+}
+}
+@media screen and (min-height: 667px) {
+  .need-help-images *{
+    width: 88%;
+  }
+  .need-help-p * {
+    font-size: 14px;
+  }
+}
+@media screen and (min-height: 700px){
+  div#custom-need-help-widget.chw-widget-area.widget-area {
+    padding-bottom: 0;
+  }
+  .need-help-images * {
+    width: 100%;
+  }
+  div#button-widget-area.chw-widget-area.widget-area {
+    padding-top: 10px;
+  }
+  .feedback-h1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  div.two input {
+    height: 3em;
+  }
+  #enquiry {
+    min-height: 150px;
+  }
+}
+
+@media screen and (min-height: 720px) and (max-height: 730px){
+  a.wp-block-button__link.wp-element-button {
+    min-height: 150px;
+    padding: 20px;
+    margin: 0 20px 10px 20px;
+  }
+  .feedback-h1{
+    padding-bottom: 0;
+  }
+  /* Need Help Page */
+  #need-help-slider {
+    padding-top: 0;
+  }
+  .need-help-images *{
+    width: 80%;
+  }
+  .need-help-p * {
+    font-size: 14px;
+  }
+}
+@media screen and (min-height: 731px) {
+  .need-help-images *{
+    width: 90%;
+  }
+}
+@media screen and (min-height: 740px) {
+  .need-help-images *{
+    width: 85%;
+  }
+}
+@media screen and (min-height: 786px) {
+  .need-help-images *{
+    width: 100%;
+  }
+}
+@media screen and (min-height: 800px) {
+  div.contacttop {
+    min-height: 100vh;
+  }
+  #contact-container {
+    margin-bottom: 150px;
+  }
+  #theForm {
+    height: 100vh;
+  }
+  #title,
+  #email {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  #enquiry {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-height: 200px;
+  }
+  .submit {
+    margin-top: 30px;
+  }
+  .feedback-h1{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+ /* category page */
+  div.top{
+    margin-top: 0;
+  }
+
+  a.wp-block-button__link.wp-element-button {
+    padding: 20px 20px 0 20px;
+    min-height: 140px;
+  }
+  div#category-container {
+    min-height: 100vh;
+  }
+  div#button-widget-area.chw-widget-area.widget-area {
+    padding: 10px 10px ;
+    min-width: 350px;
+  }
+
+
+  /* Need Help Page */
+  div#custom-need-help-widget.chw-widget-area.widget-area{
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .need-help-images *{
+    width: 90%;
+  }
+  .need-help-p *{
+    font-size: 16px;
+  }
+  .need-help-h1 * {
+    font-size: 30px !important;
+    margin-top: 5px;
+  }
+
+}
+
+@media screen and (min-height: 812px) and (max-height: 823px){
+  a.wp-block-button__link.wp-element-button {
+    min-height: 120px;
+  }
+  #title,
+  #email {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  #enquiry {
+    margin-top: 0;
+    margin-bottom: 0;
+    min-height: 180px;
+
+  }
+  .feedback-h1{
+    font-size: 25px;
+  }
+    .need-help-images *{
+      width: 98%;
+  }
+}
+@media screen and (min-height: 840px) {
+  #theForm {
+    height: 90vh;
+  }
+}
+@media screen and (min-height: 844px) and (max-height: 882px){
+  a.wp-block-button__link.wp-element-button {
+    min-height: 130px;
+  }
+  .need-help-images *{
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-height: 882px) and (max-height: 900px){
+
+div#button-widget-area.chw-widget-area.widget-area {
+min-width: 300px;
+}
+  .need-help-h1 * {
+    margin-top: 20px;
+  }
+  .feedback-h1{
+    font-size: 25px;
+  }
+  .need-help-images *{
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-height: 900px) {
+  .need-help-h1 * {
+    margin-top: 25px;
+  }
+  #title,
+  #email {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  #enquiry {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .submit {
+    margin-top: 30px;
+  }
+  #theForm {
+    height: 100vh;
+  }
+
+  div#button-widget-area.chw-widget-area.widget-area {
+    padding: 20px 0 20px 0;
+    min-width: 350px;
+  }
+  a.wp-block-button__link.wp-element-button {
+    margin: 5px 0 5px 0;
+    min-height: 140px;
+  }
+
+  div#category-container {
+    height: 100vh;
+  }
+  /* Need Help Page */
+  div#custom-need-help-widget.chw-widget-area.widget-area{
+    padding-top: 30px;
+  }
+  .need-help-images *{
+    width: 100%;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  div#button-widget-area.chw-widget-area.widget-area {
+    min-width: 400px;
+  }
+  a.wp-block-button__link.wp-element-button {
+    min-height: 160px;
+  }
+  /* Need Help Page */
+  #need-help-slider{
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+  }
+  div#custom-need-help-widget.chw-widget-area.widget-area{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .need-help-images *{
+    width: 100%;
+  }
+  .need-help-p * {
+    font-size: 20px;
+  }
+  .need-help-h1 * {
+    font-size: 35px !important;
+      margin-top: 0;
+  }
+  .feedback-h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-height: 1138px) {
+  a.wp-block-button__link.wp-element-button {
+    min-height: 180px;
+    min-width: 180px;
+    padding: 30px;
   }
 }

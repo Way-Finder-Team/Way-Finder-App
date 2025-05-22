@@ -18,18 +18,13 @@
     </title>
     <?php wp_head(); ?>
 </head>
-
 <body>
     <div id="wrapper">
         <header class="menu-wrap">
-
-            <?php if (is_front_page() || is_page('thank-you')): ?>
-                <!-- hunbarger icon -->
+            <!-- hamburger icon -->
+            <div class="menu-toggle-container">
                 <i class="fas fa-bars menu-icon" id="menu-toggle"></i>
-            <?php else : ?>
-                <!-- else go back with ← -->
-                <i class="fas fa-arrow-left back-icon" onclick="history.back();"></i>
-            <?php endif; ?>
+            </div>        
 
             <!-- Wayfinder in center -->
             <div class="title">
@@ -53,3 +48,14 @@
                 ?>
             </nav>
         </header>
+
+        <!--Go back & ← -->
+        
+        <?php if (!is_front_page() && !is_page('thank-you')): ?> 
+                <div class="back-button-container<?php if (is_page('contact')|| is_page('feedback')) echo ' custom-bg-color'; ?>">
+                    <a href="javascript:history.back();" class="back-icon-link">
+                        <i class="fas fa-arrow-left back-icon"></i>
+                        <span class="go-back-text">Go Back</span>
+                    </a>
+                </div>  
+        <?php endif; ?>

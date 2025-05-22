@@ -15,7 +15,7 @@
         </div>
     </div>
 </div>
-</div>
+
+</div>  <!-- wrapper -->
 </body>
 </html>
-
