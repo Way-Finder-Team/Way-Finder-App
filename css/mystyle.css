@@ -751,9 +751,6 @@ div.thank-you-container {
     /* width: 100%; */
     padding: 10px 0;
   }
-  .title a {
-    display: none;
-  }
   .menu-icon {
     display: none; /* hide hamburger icon on larger screens */
   }
@@ -799,9 +796,10 @@ div.thank-you-container {
   }
 }
 @media screen and (max-width: 400px) {
-  .title a {
+  .logo {
     display: none;
   }
+
   /* .wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
     width: calc(50% - var(--wp--style--block-gap, .5em) * .75);
   } */
