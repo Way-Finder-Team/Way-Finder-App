@@ -554,12 +554,14 @@ li#contact-library-link {
 }
 #contact-text {
   text-align: center;
+  font-weight: bold;
 }
 .contact-info {
   font-weight: normal;
 }
 li#contact-library-link:hover {
   transform: translateY(-5px);
+  font-weight: bold;
 }
 
 #contact-container {
