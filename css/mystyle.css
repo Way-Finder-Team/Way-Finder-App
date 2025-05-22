@@ -730,6 +730,7 @@ div.thank-you-container {
   display: inline-block;
 }
 /* map */
+
 .map-container {
   position: relative;
   min-height: 100vh;
@@ -760,7 +761,8 @@ div.thank-you-container {
   top: var(--menu-height);
   left: 0;
   position: absolute;
-  border: 0;
+  border: none;   
+  overflow: hidden;
 }
 
   @media screen and (min-width: 320px) and (max-width: 374px){
