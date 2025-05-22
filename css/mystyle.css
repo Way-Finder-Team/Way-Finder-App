@@ -970,12 +970,6 @@ div.thank-you-container {
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media screen and (max-width: 400px) {
   /* library desk */
-  .title a {
-    display: none;
-  }
-  div.one {
-    width: 80%;
-  }
 
   .desktop h1 {
     font-size: 25px;
@@ -1263,10 +1257,6 @@ div.thank-you-container {
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (min-width: 400px) and (max-width: 575px) {
-  .title a {
-    font-size: 1.2em;
-  }
-
   .desktop h1 {
     font-size: 30px;
   }
@@ -1661,7 +1651,7 @@ div.thank-you-container {
 
 @media screen and (max-width: 400px) {
   /* library desk */
-  .title a {
+  .logo  {
     display: none;
   }
   div.one {
