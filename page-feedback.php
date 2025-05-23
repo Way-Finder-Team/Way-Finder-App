@@ -7,6 +7,8 @@ get_header();
         <div class="feedBacktop">
             <form action="https://formsubmit.co/01f3e4b2a9a1959fa602647b3409d2f9" method="POST" id="theForm">
                 <input type="hidden" name="_next" value="http://localhost/wordpress/thank-you">
+                <input type="hidden" name="_autoresponse" value="Thank you for your submission">
+                <input type="hidden" name="_template" value="table">
                 <h1 class="feedback-h1">Give Us Some Feedback!</h1>
                    <div id="form-container">
                     <div class="two">
