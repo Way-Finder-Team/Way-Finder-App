@@ -255,7 +255,7 @@ div#category-container {
   padding: 10px;
 }
 
-.findItemtop h3 {
+.findItemtop h2 {
   padding: 10px;
   line-height: 1.5;
   text-align: left;
@@ -422,7 +422,7 @@ p {
   margin-bottom: 1.5em;
 }
 div.findItem h1,
-h3,
+h2,
 p {
   margin-bottom: 1.5em;
 }
@@ -1173,7 +1173,7 @@ div.thank-you-container {
     margin-bottom: 10px;
   }
 
-  .findItemtop h3 {
+  .findItemtop h2 {
     margin-bottom: 0;
   }
 
@@ -1393,7 +1393,7 @@ div.thank-you-container {
     margin-bottom: 10px;
   }
 
-  div.findItemtop h3 {
+  div.findItemtop h2 {
     margin-bottom: 0;
   }
 
