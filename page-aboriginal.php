@@ -8,7 +8,7 @@
                 by providing support in careers, training, and employment opportunities.<br><br> 
                 Through tailored programs and mentorship, the team fosters skills development and builds confidence,
                 helping young individuals connect with their cultural identity 
-                while navigating pathways to sustainable futures in their communities. </p>
+                while navigating pathways to sustainable futures in their communities.</p>
 
             <div class="aboriginal-image-container">
                 <img src="<?= get_template_directory_uri(); ?>/img/aboriginal.png" alt="printer and scanner." class="category-images">

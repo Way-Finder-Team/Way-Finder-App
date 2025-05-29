@@ -3,7 +3,6 @@
 get_header();
 ?>
 
-
         <div class="feedBacktop">
             <form action="https://formsubmit.co/01f3e4b2a9a1959fa602647b3409d2f9" method="POST" id="theForm">
                 <input type="hidden" name="_next" value="http://localhost/wordpress/thank-you">
@@ -35,9 +34,6 @@ get_header();
                     </div>
                    </div>
             </form>
-
-
-
         </div>
     </div>  <!-- wrapper -->
 </body>
