@@ -7,7 +7,7 @@
 
 
 <div class="map-container">
-    <h1 id="welcome-title">Welcome to TAFE Library!</h1>
+    <h1 id="welcome-title">Welcome to the TAFE Library!</h1>
 
     <iframe 
         title="Mappedin Map"
