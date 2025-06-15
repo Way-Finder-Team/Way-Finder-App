@@ -10,8 +10,8 @@ html,
 body {
   margin: 0 !important;
   padding: 0;
-  height: 100%;
-  overflow: hidden;
+  height: 100vh;
+  /*overflow: hidden;*/
 }
 h1 {
   color: black;
@@ -174,8 +174,8 @@ div.frontTop {
 }
 /*what r u looking for*/
 div.top {
-  min-height: 100vh;
-  overflow-y: auto;
+  /*min-height: 100vh;*/
+  /*overflow-y: auto;*/
   margin-top: 1em;
 }
 .wp-block-button__link {
@@ -225,8 +225,6 @@ img.wp-image-145 {
   top: -10px !important;
 }
 div#category-container {
-  max-height: 80vh;
-  overflow-y: auto;
   text-align: center;
 }
 
@@ -293,6 +291,10 @@ div#custom-need-help-widget.chw-widget-area.widget-area {
 
 .need-help-h1 * {
   margin-top: 5px;
+}
+#need-help-slider{
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
 /*sub page of category*/
@@ -492,7 +494,10 @@ div#custom-classroom-widget.chw-widget-area.widget-area {
 div.contacttop {
   background-color: #f2f2f2;
   min-height: 90vh;
-  display: flex;
+  /*display: flex;*/
+  padding-top: 1.5em;
+  padding-left: 15px;
+  padding-right: 15px;
   align-items: center;
   justify-content: center;
 }
@@ -545,7 +550,9 @@ li#contact-library-link:active {
 /*feedback page*/
 div.feedbacktop {
   position: relative;
-  z-index: 1;
+  /*z-index: 1;*/
+  /*overflow-y: auto;*/
+  /*max-height: 90vh;*/
   width: 100%;
   text-align: center;
   padding-top: 100px;
@@ -554,13 +561,13 @@ div.feedbacktop {
   color: black;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 25px;
+  font-size: 23px;
   text-align: center;
 }
 
 #theForm {
-  height: 85vh;
-  overflow-y: auto;
+  height: 100vh;
+  /*overflow-y: auto;*/
   background-color: #f2f2f2;
   margin: 0 auto;
   border: none;
@@ -628,7 +635,6 @@ div.three label {
   text-align: left;
 }
 #form-container {
-  margin-top: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -678,31 +684,33 @@ div.thank-you-container {
   color: #23272a;
 }
 .col p {
-  font-size: 17px;
+  font-size: 19px;
   color: black;
 }
 .col .col-md-8 {
   background-color: #f2f2f2;
-  padding: 40px;
+  padding: 10px;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin: 60px 50px 0 50px;
   height: auto;
   box-sizing: border-box;
 }
 .thankstop {
   background-color: white;
   height: 100vh;
-  display: flex;
+  /*display: flex;*/
+  padding-top: 3em;
+  padding-left: 15px;
+  padding-right: 15px;
   align-items: center;
   justify-content: center;
 }
 #thanks-text {
-  font-size: 22px;
+  font-size: 19px;
   text-align: center;
 }
 #feedback-return-text {
-  font-size: 22px;
+  font-size: 19px;
   margin: 0;
   margin: 60px;
   text-align: center;
@@ -855,6 +863,7 @@ div.thank-you-container {
   #thanks-text {
     font-size: 25px;
   }
+
 }
 @media screen and (min-width: 780px) {
   /*category*/
@@ -899,6 +908,7 @@ div.thank-you-container {
   .custom-menu-class ul li {
     display: inline-block;
   }
+
 }
 
 @media screen and (max-width: 850px) {
@@ -1892,6 +1902,7 @@ div.thank-you-container {
   .need-help-p * {
     font-size: 18px;
   }
+
 }
 
 @media screen and (min-height: 1000px) {
@@ -1950,3 +1961,4 @@ div.thank-you-container {
     top: 40px;
   }
 }
+
