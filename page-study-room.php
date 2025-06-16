@@ -13,7 +13,7 @@
         </div>
     </div>
 </div>
-<form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" id="classroomGoHomeButton">
+<form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" id="studyRoomGoHomeButton">
     <button type="submit" id="submit" class="submit">Go Back to Home</button>
 </form>
 </div>  <!-- wrapper -->

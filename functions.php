@@ -91,6 +91,22 @@ function need_classroom_init()
 add_action('widgets_init', 'need_classroom_init');
 
 
+// add studyroom widget
+function need_studyroom_init()
+{
+
+    register_sidebar(array(
+        'name'          => 'Custom Studyroom Widget Area',
+        'id'            => 'custom-studyroom-widget',
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="custom-studyroom-widget">',
+        'after_title'   => '</h2>',
+    ));
+}
+add_action('widgets_init', 'need_studyroom_init');
+
+
 function way_finder_heading_scripts()
 {
 
@@ -112,18 +128,4 @@ add_action('wp_enqueue_scripts', 'burger_menu_icon_scripts');
 
 
 
-// add studyroom widget 
-function need_studyroom_init()
-{
-
-  register_sidebar(array(
-    'name'          => 'Custom Studyroom Widget Area',
-    'id'            => 'custom-studyroom-widget',
-    'before_widget' => '<div class="widget">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2 class="custom-studyroom-widget">',
-    'after_title'   => '</h2>',
-  ));
-}
-add_action('widgets_init', 'need_studyroom_init');
 
