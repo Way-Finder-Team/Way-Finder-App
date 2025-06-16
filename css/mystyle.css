@@ -288,6 +288,7 @@ div#custom-need-help-widget.chw-widget-area.widget-area {
   height: auto;
   display: block;
   margin: 0 auto;
+  padding-top: 30px;
   padding-bottom: 40px;
 }
 .need-help-p * {
@@ -305,15 +306,15 @@ div#custom-need-help-widget.chw-widget-area.widget-area {
   /*overflow-y: auto;*/
   max-width: 100%;
   overflow-x: hidden;
+
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .n2-ss-widget.n2-style-6679a19c901d61fb802720533bbad114-heading.nextend-arrow.n2-ow-all.nextend-arrow-next.nextend-arrow-animated-fade,
 .n2-ss-widget.n2-style-6679a19c901d61fb802720533bbad114-heading.nextend-arrow.n2-ow-all.nextend-arrow-previous.nextend-arrow-animated-fade {
   top: -60px;
-}
-.need-help-slider{
-  min-height: 500px;
-  max-height: 500px;
-  height: 50vh;
 }
 
 
