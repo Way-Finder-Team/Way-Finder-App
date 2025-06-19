@@ -1,11 +1,5 @@
 <?php get_header(); ?>
 
-
-<!-- <div class="frontTop" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/map.jpg');">
-            <h1>Welcome to TAFE Library!</h1>
-        </div> -->
-
-
 <div class="map-container">
     <h1 id="welcome-title">Welcome to the TAFE Library!</h1>
 
