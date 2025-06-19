@@ -316,7 +316,7 @@ div#custom-need-help-widget.chw-widget-area.widget-area {
 }
 .n2-ss-widget.n2-style-6679a19c901d61fb802720533bbad114-heading.nextend-arrow.n2-ow-all.nextend-arrow-next.nextend-arrow-animated-fade,
 .n2-ss-widget.n2-style-6679a19c901d61fb802720533bbad114-heading.nextend-arrow.n2-ow-all.nextend-arrow-previous.nextend-arrow-animated-fade {
-  top: -60px;
+  top: -20px;
 }
 
 
@@ -2001,7 +2001,7 @@ div.thank-you-container {
   }
   .n2-ss-widget.n2-style-6679a19c901d61fb802720533bbad114-heading.nextend-arrow.n2-ow-all.nextend-arrow-next.nextend-arrow-animated-fade,
   .n2-ss-widget.n2-style-6679a19c901d61fb802720533bbad114-heading.nextend-arrow.n2-ow-all.nextend-arrow-previous.nextend-arrow-animated-fade {
-    top: 40px;
+    top: 150px;
   }
   /*feedback*/
   .feedback-h1 {
