@@ -624,9 +624,9 @@ div.two input {
   margin: 5px 5px;
   max-height: 120px;
 }
-input#terms {
-  margin: 5px 15px 15px 0;
-}
+/*input#terms {*/
+/*  margin: 5px 15px 15px 0;*/
+/*}*/
 
 div.two input,
 div.three textarea {
@@ -667,6 +667,9 @@ div.three label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#feedback-button-container{
+  padding: 15px;
 }
 
 .submit {
