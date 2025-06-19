@@ -21,17 +21,15 @@ get_header();
             </div>
             <div class="three">
                 <label for="enquiry">Enquiry</label>
-                <textarea name="enquiry" id="enquiry" placeholder="Enter your feedback here" rows="5" cols="50" required></textarea>
+                <textarea name="enquiry" id="enquiry" placeholder="Enter your feedback regarding this app here" rows="5" cols="50" required></textarea>
             </div>
-            <div class="four">
-                <label for="terms">
-                    <input type="checkbox" name="terms" id="terms" required>I agreed with terms and conditions.</label>
-            </div>
+            <div id="feedback-button-container">
             <div class="four">
                 <input type="submit" value="Submit" id="submit" class="submit">
             </div>
             <div class="four">
                 <input type="reset" value="Cancel" id="cancel">
+            </div>
             </div>
         </div>
     </form>
