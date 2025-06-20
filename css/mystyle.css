@@ -175,8 +175,6 @@ div.frontTop {
 }
 /*what r u looking for*/
 div.top {
-  /*min-height: 100vh;*/
-  /*overflow-y: auto;*/
   margin-top: 1em;
 }
 .wp-block-button__link {
@@ -989,7 +987,6 @@ div.thank-you-container {
 @media screen and (max-width: 430px) {
   /*category*/
   div#button-widget-area.chw-widget-area.widget-area {
-    overflow-y: auto;
     max-height: 100vh;
     margin-top: 0;
   }
@@ -1835,9 +1832,7 @@ div.thank-you-container {
     padding: 20px 20px 0 20px;
     min-height: 140px;
   }
-  div#category-container {
-    min-height: 100vh;
-  }
+
   div#button-widget-area.chw-widget-area.widget-area {
     padding: 10px 10px;
     min-width: 350px;
@@ -1952,9 +1947,7 @@ div.thank-you-container {
     margin: 5px 0 5px 0;
     min-height: 140px;
   }
-  div#category-container {
-    height: 100vh;
-  }
+
   /* Need Help Page */
   .need-help-h1 * {
     margin-top: 50px;
